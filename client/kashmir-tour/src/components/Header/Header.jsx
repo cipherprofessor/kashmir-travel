@@ -40,26 +40,28 @@ const Header = () => {
           <NavLink to="/contact" className="nav-link">
             Contact
           </NavLink>
-          <div className="dropdown" onMouseEnter={handleDropdownToggle} onMouseLeave={handleDropdownToggle}>
-            <NavLink to="/famous-tours" className="nav-link">
-              Famous Tours
-            </NavLink>
+          <div
+            className="nav-link dropdown"
+            onMouseEnter={handleDropdownToggle}
+            onMouseLeave={handleDropdownToggle}
+          >
+            <span>Famous Tours</span>
             {isDropdownOpen && (
               <div className="dropdown-menu">
                 <NavLink to="/famous-tours/tour1" className="dropdown-link">
-                  Tour 1
+                  Gulmarg
                 </NavLink>
                 <NavLink to="/famous-tours/tour2" className="dropdown-link">
-                  Tour 2
+                  Pahalgam
                 </NavLink>
                 <NavLink to="/famous-tours/tour3" className="dropdown-link">
-                  Tour 3
+                  Sonmarg
                 </NavLink>
                 <NavLink to="/famous-tours/tour4" className="dropdown-link">
-                  Tour 4
+                  Dal Lake
                 </NavLink>
                 <NavLink to="/famous-tours/tour5" className="dropdown-link">
-                  Tour 5
+                  Bangas
                 </NavLink>
               </div>
             )}
@@ -73,7 +75,13 @@ const Header = () => {
         </div>
         <div className="menu-toggle">
           <button id="menu-toggle">
-            <svg className="menu-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              className="menu-toggle-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>

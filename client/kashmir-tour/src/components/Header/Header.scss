@@ -6,7 +6,7 @@ header {
   height: 70px;
 }
 
-.mobile-nav-link{
+.mobile-nav-link {
   font-size: 200px;
 }
 
@@ -29,36 +29,60 @@ nav {
   width: 50px;
 }
 
-// .nav-links {
-//   display: flex;
-//   gap: 1rem;
-// }
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
 
 .nav-link {
   color: #333;
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 1rem; /* Add padding for the border effect */
-  // border: 2px solid transparent; /* Initially transparent border */
   transition: all 0.3s ease; /* Smooth transition for the hover effect */
   font-size: large;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .nav-link:hover {
-  // border: 1px solid #8e9eab; /* Border color on hover */
-  // background: linear-gradient(to right, #eef2f3, #8e9eab); /* Gradient background on hover */
   color: #ffffff; /* Change text color on hover */
 }
 
-/* Styles for Login and Signup buttons */
-// .nav-link.login, .nav-link.signup {
-//   border: 2px solid #f8f5f5; /* Border color */
-//   border-radius: 15px; /* Curved border */
-//   padding: 0.5rem 3rem; /* Add padding */
-//   margin-right: 0.8rem; /* Add margin to separate the buttons */
-// }
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+}
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  // border: 1px solid #ccc;
+  // border-radius: 4px;
+  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-link {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.dropdown-link:hover {
+  background-color: transparent; /* Change background on hover */
+  color: #ffffff;
+}
+
+/* Styles for Login and Signup buttons */
 .nav-link.login {
   border: 1px solid #ffffff; /* Border color */
   border-radius: 25px; /* Curved border */
@@ -69,22 +93,22 @@ nav {
 }
 
 .nav-link.signup {
-  border: 1px solid #5D50C6; /* Border color */
+  border: 1px solid #5d50c6; /* Border color */
   border-radius: 25px; /* Curved border */
   padding: 0.5rem 1rem; /* Add padding */
-  background-color: #5D50C6; /* Light blue background for signup button */
+  background-color: #5d50c6; /* Light blue background for signup button */
   margin-right: 0; /* Remove margin for the last button */
   color: white;
   padding: 7px 25px;
-  
 }
 
 .nav-link.login:hover {
-  background-color: #5D50C6; /* Change border color on hover */
-  border: 1px solid #5D50C6; /* Border color */
+  background-color: #5d50c6; /* Change border color on hover */
+  border: 1px solid #5d50c6; /* Border color */
+  color: white;
 }
 
-.nav-link.signup:hover{
+.nav-link.signup:hover {
   background-color: white;
   border: 1px solid #ffffff;
   color: black;
