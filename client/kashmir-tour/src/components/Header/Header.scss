@@ -48,7 +48,7 @@ nav {
 .nav-link:hover {
   // border: 1px solid #8e9eab; /* Border color on hover */
   // background: linear-gradient(to right, #eef2f3, #8e9eab); /* Gradient background on hover */
-  color: #dfeded; /* Change text color on hover */
+  color: #ffffff; /* Change text color on hover */
 }
 
 /* Styles for Login and Signup buttons */
@@ -60,11 +60,12 @@ nav {
 // }
 
 .nav-link.login {
-  border: 2px solid #333; /* Border color */
-  border-radius: 15px; /* Curved border */
+  border: 1px solid #ffffff; /* Border color */
+  border-radius: 25px; /* Curved border */
   padding: 0.5rem 1rem; /* Add padding */
   margin-right: 0.5rem; /* Add margin to separate the buttons */
   background-color: white; /* White background for login button */
+  padding: 7px 25px;
 }
 
 .nav-link.signup {
@@ -74,11 +75,19 @@ nav {
   background-color: #5D50C6; /* Light blue background for signup button */
   margin-right: 0; /* Remove margin for the last button */
   color: white;
+  padding: 7px 25px;
   
 }
 
-.nav-link.login:hover, .nav-link.signup:hover {
-  // border-color: #ed0000; /* Change border color on hover */
+.nav-link.login:hover {
+  background-color: #5D50C6; /* Change border color on hover */
+  border: 1px solid #5D50C6; /* Border color */
+}
+
+.nav-link.signup:hover{
+  background-color: white;
+  border: 1px solid #ffffff;
+  color: black;
 }
 
 .menu-toggle {

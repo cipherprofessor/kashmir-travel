@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.scss';
 
 const Header = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
   useEffect(() => {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -17,6 +19,10 @@ const Header = () => {
       menuToggle.removeEventListener('click', toggleMenu);
     };
   }, []);
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <header>
@@ -34,9 +40,30 @@ const Header = () => {
           <NavLink to="/contact" className="nav-link">
             Contact
           </NavLink>
-          <NavLink to="/tour" className="nav-link">
-            Tour
-          </NavLink>
+          <div className="dropdown" onMouseEnter={handleDropdownToggle} onMouseLeave={handleDropdownToggle}>
+            <NavLink to="/famous-tours" className="nav-link">
+              Famous Tours
+            </NavLink>
+            {isDropdownOpen && (
+              <div className="dropdown-menu">
+                <NavLink to="/famous-tours/tour1" className="dropdown-link">
+                  Tour 1
+                </NavLink>
+                <NavLink to="/famous-tours/tour2" className="dropdown-link">
+                  Tour 2
+                </NavLink>
+                <NavLink to="/famous-tours/tour3" className="dropdown-link">
+                  Tour 3
+                </NavLink>
+                <NavLink to="/famous-tours/tour4" className="dropdown-link">
+                  Tour 4
+                </NavLink>
+                <NavLink to="/famous-tours/tour5" className="dropdown-link">
+                  Tour 5
+                </NavLink>
+              </div>
+            )}
+          </div>
           <NavLink to="/login" className="nav-link login">
             Login
           </NavLink>
@@ -62,8 +89,8 @@ const Header = () => {
         <NavLink to="/contact" className="mobile-nav-link">
           Contact
         </NavLink>
-        <NavLink to="/tour" className="mobile-nav-link">
-          Tour
+        <NavLink to="/famous-tours" className="mobile-nav-link">
+          Famous Tours
         </NavLink>
         <NavLink to="/login" className="mobile-nav-link login">
           Login
