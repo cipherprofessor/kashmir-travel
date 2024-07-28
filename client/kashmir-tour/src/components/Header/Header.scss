@@ -1,0 +1,80 @@
+/* src/components/Header/Header.scss */
+
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .logo-image {
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav-links {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-link {
+      color: #4a4a4a;
+      text-decoration: none;
+
+      &:hover {
+        color: #1a1a1a;
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #4a4a4a;
+    outline: none;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+
+    .mobile-nav-link {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: #4a4a4a;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
