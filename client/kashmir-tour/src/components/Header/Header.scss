@@ -6,11 +6,15 @@ header {
   height: 70px;
 }
 
+.mobile-nav-link{
+  font-size: 200px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 6rem;
   width: 100%;
   height: 70px;
 }
@@ -20,34 +24,69 @@ nav {
   align-items: center;
 }
 
-.logo-img{
+.logo-img {
   height: 50px;
   width: 50px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 1rem;
-}
+// .nav-links {
+//   display: flex;
+//   gap: 1rem;
+// }
 
 .nav-link {
   color: #333;
   text-decoration: none;
   font-weight: 500;
+  padding: 0.5rem 1rem; /* Add padding for the border effect */
+  // border: 2px solid transparent; /* Initially transparent border */
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .nav-link:hover {
-  color: #000;
+  // border: 1px solid #8e9eab; /* Border color on hover */
+  // background: linear-gradient(to right, #eef2f3, #8e9eab); /* Gradient background on hover */
+  color: #dfeded; /* Change text color on hover */
 }
 
-.mobile-menu {
+/* Styles for Login and Signup buttons */
+// .nav-link.login, .nav-link.signup {
+//   border: 2px solid #f8f5f5; /* Border color */
+//   border-radius: 15px; /* Curved border */
+//   padding: 0.5rem 3rem; /* Add padding */
+//   margin-right: 0.8rem; /* Add margin to separate the buttons */
+// }
+
+.nav-link.login {
+  border: 2px solid #333; /* Border color */
+  border-radius: 15px; /* Curved border */
+  padding: 0.5rem 1rem; /* Add padding */
+  margin-right: 0.5rem; /* Add margin to separate the buttons */
+  background-color: white; /* White background for login button */
+}
+
+.nav-link.signup {
+  border: 1px solid #5D50C6; /* Border color */
+  border-radius: 25px; /* Curved border */
+  padding: 0.5rem 1rem; /* Add padding */
+  background-color: #5D50C6; /* Light blue background for signup button */
+  margin-right: 0; /* Remove margin for the last button */
+  color: white;
+  
+}
+
+.nav-link.login:hover, .nav-link.signup:hover {
+  // border-color: #ed0000; /* Change border color on hover */
+}
+
+.menu-toggle {
   display: none;
 }
 
-#menu-toggle:checked + .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.mobile-menu {
+  display: none; /* Ensure the mobile menu is hidden by default */
 }
 
 @media (max-width: 768px) {
@@ -55,7 +94,15 @@ nav {
     display: none;
   }
 
+  .menu-toggle {
+    display: block;
+  }
+
   .mobile-menu {
+    display: none; /* Ensure the mobile menu is hidden by default */
+  }
+
+  .mobile-menu.show {
     display: flex;
     flex-direction: column;
     gap: 1rem;

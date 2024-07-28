@@ -7,20 +7,20 @@ const Header = () => {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+    const toggleMenu = () => {
+      mobileMenu.classList.toggle('show');
+    };
+
+    menuToggle.addEventListener('click', toggleMenu);
 
     return () => {
-      menuToggle.removeEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
+      menuToggle.removeEventListener('click', toggleMenu);
     };
   }, []);
 
   return (
-    <header className="header">
-      <nav className="header-nav">
+    <header>
+      <nav>
         <NavLink to="/" className="logo">
           <img src="/src/assets/travel.png" alt="Logo" className="logo-img" />
         </NavLink>
@@ -37,22 +37,22 @@ const Header = () => {
           <NavLink to="/tour" className="nav-link">
             Tour
           </NavLink>
-          <NavLink to="/login" className="nav-link">
+          <NavLink to="/login" className="nav-link login">
             Login
           </NavLink>
-          <NavLink to="/signup" className="nav-link">
+          <NavLink to="/signup" className="nav-link signup">
             Signup
           </NavLink>
         </div>
         <div className="menu-toggle">
-          <button id="menu-toggle" className="menu-toggle-btn">
+          <button id="menu-toggle">
             <svg className="menu-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
         </div>
       </nav>
-      <div className="mobile-menu hidden" id="mobile-menu">
+      <div className="mobile-menu" id="mobile-menu">
         <NavLink to="/" className="mobile-nav-link">
           Home
         </NavLink>
@@ -65,10 +65,10 @@ const Header = () => {
         <NavLink to="/tour" className="mobile-nav-link">
           Tour
         </NavLink>
-        <NavLink to="/login" className="mobile-nav-link">
+        <NavLink to="/login" className="mobile-nav-link login">
           Login
         </NavLink>
-        <NavLink to="/signup" className="mobile-nav-link">
+        <NavLink to="/signup" className="mobile-nav-link signup">
           Signup
         </NavLink>
       </div>
