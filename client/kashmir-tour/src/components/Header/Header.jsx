@@ -20,9 +20,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="container">
+      <nav className="header-nav">
         <NavLink to="/" className="logo">
-          <img src="/src/assets/travel.jpg" alt="Logo" className="logo-image" />
+          <img src="/src/assets/travel.png" alt="Logo" className="logo-img" />
         </NavLink>
         <div className="nav-links">
           <NavLink to="/" className="nav-link">
@@ -37,11 +37,19 @@ const Header = () => {
           <NavLink to="/tour" className="nav-link">
             Tour
           </NavLink>
+          <NavLink to="/login" className="nav-link">
+            Login
+          </NavLink>
+          <NavLink to="/signup" className="nav-link">
+            Signup
+          </NavLink>
         </div>
-        <div className="menu-toggle" id="menu-toggle">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+        <div className="menu-toggle">
+          <button id="menu-toggle" className="menu-toggle-btn">
+            <svg className="menu-toggle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
       </nav>
       <div className="mobile-menu hidden" id="mobile-menu">
@@ -56,6 +64,12 @@ const Header = () => {
         </NavLink>
         <NavLink to="/tour" className="mobile-nav-link">
           Tour
+        </NavLink>
+        <NavLink to="/login" className="mobile-nav-link">
+          Login
+        </NavLink>
+        <NavLink to="/signup" className="mobile-nav-link">
+          Signup
         </NavLink>
       </div>
     </header>
