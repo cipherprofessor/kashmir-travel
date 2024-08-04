@@ -1,5 +1,6 @@
 // src/components/TourPackageCard/TourPackageCard.scss
 .tour-package-card {
+    flex: 0 0 300px; // Fixed width for each card
     display: flex;
     flex-direction: column;
     width: 300px;

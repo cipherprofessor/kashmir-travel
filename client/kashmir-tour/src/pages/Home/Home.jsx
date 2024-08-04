@@ -24,14 +24,21 @@ const Home = () => {
       description: 'Discover the diverse landscapes and rich history of Sonmarg.',
       price: 699,
     },
+    {
+      images: ['/src/assets/cardimages/srinagar/dallake.png', '/src/assets/cardimages/srinagar/tulip.jpg', '/src/assets/cardimages/srinagar/ghantaghar.jpg'],
+      title: 'Srinagar',
+      description: 'Discover the diverse landscapes and rich history of Sonmarg.',
+      price: 699,
+    },
+    
   ];
 
   return (
     <div className="home">
       <ImageSlider />
       <section className="tour-packages">
-        <h2 className="text-4xl font-bold text-center mb-8">We’ve Got Some Great Deals</h2>
-        <div className="flex flex-wrap justify-center">
+      <h2 className="text-4xl font-bold text-center mb-8">We’ve Got Some Great Deals</h2>
+        <div className="tour-packages-container">
           {tourPackages.map((pkg, index) => (
             <TourPackageCard
               key={index}

@@ -58,3 +58,21 @@
     background-color: #483d99;
   }
 }
+
+
+// src/components/Home/Home.scss
+.home {
+  .tour-packages {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+
+    .tour-packages-container {
+      display: flex;
+      justify-content: space-around; // Adjust as needed
+      align-items: flex-start; // Align items at the top
+      flex-wrap: nowrap; // No wrapping to keep items in one row
+      gap: 1rem; // Space between cards
+    }
+  }
+}
