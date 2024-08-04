@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './TourPackageCard.scss';
 
 const TourPackageCard = ({ images, title, description, price }) => {
@@ -12,14 +12,27 @@ const TourPackageCard = ({ images, title, description, price }) => {
     setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    }, 2000); // Change image every 2 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <div className="tour-package-card">
       <div className="image-carousel">
-        <img
-          src={images[currentImageIndex]}
-          alt={title}
-          className="tour-package-image"
-        />
+        <div className="carousel-wrapper" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={title}
+              className="tour-package-image"
+            />
+          ))}
+        </div>
         <button className="carousel-btn prev" onClick={handlePrevClick}>
           &lt;
         </button>
