@@ -25,7 +25,7 @@ const Home = () => {
       price: 699,
     },
     {
-      images: ['/src/assets/cardimages/srinagar/dallake.png', '/src/assets/cardimages/srinagar/tulip.jpg', '/src/assets/cardimages/srinagar/ghantaghar.jpg'],
+      images: ['/src/assets/cardimages/srinagar/tulip.jpg', '/src/assets/cardimages/srinagar/dallake.png', '/src/assets/cardimages/srinagar/ghantaghar.jpg'],
       title: 'Srinagar',
       description: 'Discover the diverse landscapes and rich history of Sonmarg.',
       price: 699,
