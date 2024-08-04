@@ -38,8 +38,10 @@ const TourPackageCard = ({ images, title, description, price }) => {
       <div className="tour-package-info">
         <h3 className="tour-package-title">{title}</h3>
         <p className="tour-package-description">{description}</p>
-        <div className="tour-package-price">₹{price}</div>
-        <button className="tour-package-buy-btn">Buy Now</button>
+        <div className="tour-package-info-row">
+          <div className="tour-package-price">₹{price}</div>
+          <button className="tour-package-buy-btn">Buy Now</button>
+        </div>
       </div>
     </div>
   );

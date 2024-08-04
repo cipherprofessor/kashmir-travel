@@ -13,7 +13,7 @@ const Home = () => {
       price: 499,
     },
     {
-      images: ['/src/assets/cardimages/pahalgam/pahalgam1.jpg', '/src/assets/cardimages/pahalgam/pahalgam2.jpg', '/src/assets/cardimages/pahalgam/pahalgam3.jpg'],
+      images: ['/src/assets/cardimages/pahalgam/pahalgam3.jpg', '/src/assets/cardimages/pahalgam/pahalgam2.jpg', '/src/assets/cardimages/pahalgam/pahalgam1.jpg'],
       title: 'Pahalgam',
       description: 'Enjoy the vibrant culture and stunning beaches of Pahalgam.',
       price: 599,

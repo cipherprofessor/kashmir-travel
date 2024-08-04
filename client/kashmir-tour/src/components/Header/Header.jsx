@@ -31,7 +31,7 @@ const Header = () => {
     <header>
       <nav>
         <NavLink to="/" className="logo">
-          <img src="/src/assets/travel.png" alt="Logo" className="logo-img" />
+          <img src="/src/assets/logos/travel.png" alt="Logo" className="logo-img" />
         </NavLink>
         <div className="nav-links">
           <NavLink to="/" className="nav-link">

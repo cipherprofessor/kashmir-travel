@@ -62,7 +62,17 @@
   }
 
   .tour-package-info {
+    display: flex; // Use flexbox to align items
+    flex-direction: column; // Stack title, description, and price/button vertically
     padding: 1rem;
+    gap: 1rem; // Add some space between the rows
+  }
+
+  .tour-package-info-row {
+    margin: 10px 20px;
+    display: flex; // Align price and button in a row
+    justify-content:space-between; // Distribute space between items
+    align-items: center; // Center items vertically
   }
 
   .tour-package-title {
@@ -78,7 +88,6 @@
   .tour-package-price {
     font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 1rem;
   }
 
   .tour-package-buy-btn {
