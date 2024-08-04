@@ -2,7 +2,7 @@
 import React from 'react';
 import './Banner.css';
 
-const Banner = () => {
+function Banner() {
   return (
     <div className="banner">
       <div className="banner-content">
@@ -12,6 +12,6 @@ const Banner = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Banner;

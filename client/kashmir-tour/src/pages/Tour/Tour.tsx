@@ -1,7 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable max-len */
 // client/src/pages/Tour/Tour.jsx
 import React from 'react';
 
-const Tour = () => {
+function Tour() {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Tour</h1>
@@ -19,6 +21,6 @@ const Tour = () => {
       </ul>
     </div>
   );
-};
+}
 
 export default Tour;

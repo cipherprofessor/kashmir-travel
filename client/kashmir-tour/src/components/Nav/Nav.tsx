@@ -1,21 +1,25 @@
-import { useLocation } from 'react-router-dom';
+/* eslint-disable react/button-has-type */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-duplicates */
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { useLocation, NavLink } from 'react-router-dom';
 // import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+import React from 'react';
 import {
   mobileNavContainerVariant,
   mobileNavListVariant,
   mobileNavExitProps,
 } from '../../data/animationConfig';
-import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 const activeClassName = 'selected navlink';
-const activeStyleCallback = ({ isActive }: { isActive: boolean }) =>
-  isActive ? activeClassName : 'navlink';
+const activeStyleCallback = ({ isActive }: { isActive: boolean }) => (isActive ? activeClassName : 'navlink');
 
-const NavLinks = () => {
+function NavLinks() {
   return (
     <>
       <NavLink to="/" className={activeStyleCallback}>
@@ -27,9 +31,9 @@ const NavLinks = () => {
       </NavLink>
     </>
   );
-};
+}
 
-const Nav = () => {
+function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   // const location = useLocation();
 
@@ -47,8 +51,7 @@ const Nav = () => {
         <div className="hidden justify-end md:flex">
           <NavLinks />
         </div>
-        <div className="w-[75px]">
-        </div>
+        <div className="w-[75px]" />
         <div className="flex w-[75px] justify-end md:hidden">
           <button onClick={toggleNavbar}>{isOpen ? <X /> : <Menu />}</button>
         </div>
@@ -78,6 +81,6 @@ const Nav = () => {
       </AnimatePresence> */}
     </>
   );
-};
+}
 
 export default Nav;

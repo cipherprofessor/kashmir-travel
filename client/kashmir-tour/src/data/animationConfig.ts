@@ -19,7 +19,7 @@ export const imageLoadAnimationProps = {
   initial: { scale: 1.5 },
   animate: { scale: 1 },
   transition: {
-    type: "spring",
+    type: 'spring',
     duration: 1,
   },
 };
@@ -34,14 +34,14 @@ export const mobileNavContainerVariant = {
 
 export const mobileNavListVariant = {
   hidden: { y: -20, height: 0, opacity: 0 },
-  show: { opacity: 1, height: "auto", y: 0 },
+  show: { opacity: 1, height: 'auto', y: 0 },
 };
 
 export const mobileNavExitProps = {
   exit: {
     opacity: 0,
     height: 0,
-    transition: { duration: 0.2, ease: "easeIn" },
+    transition: { duration: 0.2, ease: 'easeIn' },
   },
 };
 
@@ -51,7 +51,7 @@ export const logoRotationVariant = {
     transition: {
       repeat: Infinity,
       duration: 50,
-      ease: "linear",
+      ease: 'linear',
     },
   },
 };

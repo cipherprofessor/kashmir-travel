@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './TourPackageCard.scss';
 
-
-const TourPackageCard = ({ images, title, description, price, duration, groupSize }) => {
+function TourPackageCard({
+  images, title, description, price, duration, groupSize,
+}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handlePrevClick = () => {
@@ -41,7 +42,7 @@ const TourPackageCard = ({ images, title, description, price, duration, groupSiz
         <p className="tour-package-description">{description}</p>
         <div className="tour-package-details">
           <div className="detail-item">
-            <img src= "/src/assets/logos/calendar.png" alt="Duration" className="detail-icon" />
+            <img src="/src/assets/logos/calendar.png" alt="Duration" className="detail-icon" />
             <span className="detail-text">{duration}</span>
           </div>
           <div className="detail-item">
@@ -49,13 +50,16 @@ const TourPackageCard = ({ images, title, description, price, duration, groupSiz
             <span className="detail-text">{groupSize}</span>
           </div>
         </div>
-        <div className='tour-package-info-row'>
-        <div className="tour-package-price">₹ {price}</div>
-        <button className="tour-package-buy-btn">Book Now</button>
+        <div className="tour-package-info-row">
+          <div className="tour-package-price">
+            ₹
+            {price}
+          </div>
+          <button className="tour-package-buy-btn">Book Now</button>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default TourPackageCard;

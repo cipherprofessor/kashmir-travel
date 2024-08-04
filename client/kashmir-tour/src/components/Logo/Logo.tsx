@@ -1,14 +1,16 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
 import { motion } from 'framer-motion';
-import { logoRotationVariant } from '../../data/animationConfig';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { logoRotationVariant } from '../../data/animationConfig';
 
-
-
-export const Logo = () => {
+export function Logo() {
   return (
-    <div className='logo h-16 2-16'>
-      <img src="\assets\travel.jpg" alt="logo"></img>
+    <div className="logo h-16 2-16">
+      <img src="\assets\travel.jpg" alt="logo" />
     </div>
     // <NavLink to="/" className="inline-block">
     //   <motion.img
@@ -21,6 +23,6 @@ export const Logo = () => {
     //   />
     // </NavLink>
   );
-};
+}
 
 export default Logo;

@@ -1,7 +1,7 @@
 // client/src/components/Signup/Signup.jsx
 import React from 'react';
 
-const Signup = () => {
+function Signup() {
   return (
     <div className="container mx-auto">
       <h2 className="text-2xl font-bold mb-4">Signup</h2>
@@ -36,6 +36,6 @@ const Signup = () => {
       </form>
     </div>
   );
-};
+}
 
 export default Signup;

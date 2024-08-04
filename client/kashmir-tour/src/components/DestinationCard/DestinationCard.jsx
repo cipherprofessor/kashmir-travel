@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 // DestinationCard.js
 import React from 'react';
 import './DestinationCard.css'; // Include specific CSS for card styling
 
-const DestinationCard = ({ destination }) => {
+function DestinationCard({ destination }) {
   return (
     <div className="destination-card">
       <img src={destination.image} alt={destination.name} className="destination-image" />
@@ -12,6 +13,6 @@ const DestinationCard = ({ destination }) => {
       </div>
     </div>
   );
-};
+}
 
 export default DestinationCard;

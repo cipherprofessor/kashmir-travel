@@ -1,7 +1,7 @@
 // client/src/components/Login/Login.jsx
 import React from 'react';
 
-const Login = () => {
+function Login() {
   return (
     <div className="container mx-auto">
       <h2 className="text-2xl font-bold mb-4">Login</h2>
@@ -29,6 +29,6 @@ const Login = () => {
       </form>
     </div>
   );
-};
+}
 
 export default Login;

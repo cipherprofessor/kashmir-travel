@@ -1,3 +1,6 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable react/jsx-no-comment-textnodes */
 // src/components/Header.jsx
 
 import React, { useEffect, useState } from 'react';
@@ -5,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 import { LogIn, UserPlus } from 'lucide-react';
 import './Header.scss';
 
-const Header = () => {
+function Header() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
@@ -70,13 +73,18 @@ const Header = () => {
             )}
           </div>
           <NavLink to="/login" className="nav-link login">
-            Login <LogIn className="icon" size={16} />
+            Login
+            {' '}
+            <LogIn className="icon" size={16} />
           </NavLink>
           <NavLink to="/signup" className="nav-link signup">
-            Signup <UserPlus className="icon" size={16} />
+            Signup
+            {' '}
+            <UserPlus className="icon" size={16} />
           </NavLink>
         </div>
         <div className="menu-toggle">
+          // eslint-disable-next-line jsx-a11y/control-has-associated-label
           <button id="menu-toggle">
             <svg
               className="menu-toggle-icon"
@@ -85,7 +93,7 @@ const Header = () => {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
@@ -112,6 +120,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

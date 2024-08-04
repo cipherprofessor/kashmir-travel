@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
@@ -8,7 +10,7 @@ import Tour from './pages/Tour/Tour';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Header />
@@ -22,6 +24,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;

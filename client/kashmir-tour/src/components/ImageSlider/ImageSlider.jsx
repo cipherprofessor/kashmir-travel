@@ -1,10 +1,14 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './ImageSlider.scss';
 
-const ImageSlider = () => {
+function ImageSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
   const images = [
@@ -76,6 +80,6 @@ const ImageSlider = () => {
       </div>
     </div>
   );
-};
+}
 
 export default ImageSlider;
