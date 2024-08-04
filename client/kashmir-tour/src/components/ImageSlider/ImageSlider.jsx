@@ -10,20 +10,19 @@ const ImageSlider = () => {
   const images = [
     '/src/assets/kashmir1.jpg',
     '/src/assets/kashmir2.jpg',
-    '/src/assets/kashmir3.jpg',
     '/src/assets/kashmir4.jpg',
     '/src/assets/kashmir5.jpg',
     '/src/assets/kashmir6.jpg',
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
     arrows: false,
   };
@@ -38,12 +37,34 @@ const ImageSlider = () => {
         ))}
       </Slider>
       <div className="slider-controls">
-        <button className="control-button" onClick={() => sliderRef.current.slickPrev()}>Previous</button>
-        <div className="preview-images">
-          <img src={images[(currentSlide - 1 + images.length) % images.length]} alt="Previous slide" className="preview-image" />
-          <img src={images[(currentSlide + 1) % images.length]} alt="Next slide" className="preview-image" />
+        <div className="control-wrapper">
+          <div
+            className="preview-image-wrapper"
+            onClick={() => sliderRef.current.slickPrev()}
+          >
+            <img
+              src={images[(currentSlide - 1 + images.length) % images.length]}
+              alt="Previous slide"
+              className="preview-image-previous"
+            />
+            <button className="control-button previous-button">
+              <span className="button-text">Previous</span>
+            </button>
+          </div>
+          <div
+            className="next-image-wrapper"
+            onClick={() => sliderRef.current.slickNext()}
+          >
+            <img
+              src={images[(currentSlide + 1) % images.length]}
+              alt="Next slide"
+              className="preview-image-next"
+            />
+            <button className="control-button next-button">
+              <span className="button-text">Next</span>
+            </button>
+          </div>
         </div>
-        <button className="control-button" onClick={() => sliderRef.current.slickNext()}>Next</button>
       </div>
     </div>
   );
