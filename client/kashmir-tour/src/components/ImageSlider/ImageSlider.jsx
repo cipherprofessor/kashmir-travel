@@ -8,11 +8,15 @@ const ImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
   const images = [
-    '/src/assets/kashmir1.jpg',
-    '/src/assets/kashmir2.jpg',
-    '/src/assets/kashmir4.jpg',
-    '/src/assets/kashmir5.jpg',
-    '/src/assets/kashmir6.jpg',
+    '/src/assets/landscape/image (1).jpg',
+    '/src/assets/landscape/image (2).jpg',
+    '/src/assets/landscape/image (3).jpg',
+    '/src/assets/landscape/image (4).jpg',
+    '/src/assets/landscape/image (5).jpg',
+    '/src/assets/landscape/image (6).jpg',
+    '/src/assets/landscape/image (7).jpg',
+    '/src/assets/landscape/image (8).jpg',
+    '/src/assets/landscape/image (9).jpg',
   ];
 
   const settings = {
