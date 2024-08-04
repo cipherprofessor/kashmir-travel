@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // import { Theme, useTheme } from "../../utils/theme-provider";
 // import ThemeToggleIcon from "./ThemeToggleIcon";
 // import React from "react";

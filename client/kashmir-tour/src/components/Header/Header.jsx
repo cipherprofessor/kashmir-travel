@@ -34,7 +34,11 @@ function Header() {
     <header>
       <nav>
         <NavLink to="/" className="logo">
-          <img src="/src/assets/logos/travel.png" alt="Logo" className="logo-img" />
+          <img
+            src="/src/assets/logos/travel.png"
+            alt="Logo"
+            className="logo-img"
+          />
         </NavLink>
         <div className="nav-links">
           <NavLink to="/" className="nav-link">
@@ -93,7 +97,12 @@ function Header() {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </div>

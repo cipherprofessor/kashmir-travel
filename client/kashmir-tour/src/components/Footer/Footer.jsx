@@ -7,10 +7,10 @@ export function Footer() {
         {' '}
         {new Date().getFullYear()}
         {' '}
-        Rajesh Babu. Find me on
+        Mohsin Manzoor Bhat. Find me on
         {' '}
         <a
-          href="https://www.linkedin.com/in/rajesh-babu-56270046/"
+          href="https://www.linkedin.com/in//"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -20,7 +20,7 @@ export function Footer() {
         or
         {' '}
         <a
-          href="https://twitter.com/razzmattazzz"
+          href="https://twitter.com/"
           target="_blank"
           rel="noopener noreferrer"
         >

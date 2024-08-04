@@ -40,7 +40,11 @@ function ImageSlider() {
       <Slider ref={sliderRef} {...settings}>
         {images.map((image, index) => (
           <div key={index} className="slider-container">
-            <img src={image} alt={`Slide ${index + 1}`} className="slider-image" />
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className="slider-image"
+            />
           </div>
         ))}
       </Slider>

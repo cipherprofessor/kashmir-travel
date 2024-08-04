@@ -1,8 +1,16 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import './TourPackageCard.scss';
 
 function TourPackageCard({
-  images, title, description, price, duration, groupSize,
+  images,
+  title,
+  description,
+  price,
+  duration,
+  groupSize,
 }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -42,11 +50,19 @@ function TourPackageCard({
         <p className="tour-package-description">{description}</p>
         <div className="tour-package-details">
           <div className="detail-item">
-            <img src="/src/assets/logos/calendar.png" alt="Duration" className="detail-icon" />
+            <img
+              src="/src/assets/logos/calendar.png"
+              alt="Duration"
+              className="detail-icon"
+            />
             <span className="detail-text">{duration}</span>
           </div>
           <div className="detail-item">
-            <img src="/src/assets/logos/group.png" alt="Group Size" className="detail-icon" />
+            <img
+              src="/src/assets/logos/group.png"
+              alt="Group Size"
+              className="detail-icon"
+            />
             <span className="detail-text">{groupSize}</span>
           </div>
         </div>

@@ -1,5 +1,5 @@
 .tour-package-card {
-  flex: 0 0 320px; 
+  flex: 0 0 320px;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -17,7 +17,7 @@
     border-color: #00bbd47e;
 
     .carousel-wrapper {
-      transition: transform 1s ease-in-out; 
+      transition: transform 1s ease-in-out;
     }
   }
 
@@ -36,9 +36,9 @@
   }
 
   .tour-package-image {
-    flex: 0 0 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .carousel-btn {
@@ -62,17 +62,17 @@
   }
 
   .tour-package-info {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
-    gap: 1rem; 
+    gap: 1rem;
   }
 
   .tour-package-info-row {
     margin: 10px 20px;
-    display: flex; 
-    justify-content:space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
   }
 

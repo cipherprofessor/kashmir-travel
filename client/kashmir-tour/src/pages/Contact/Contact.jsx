@@ -8,7 +8,8 @@ function Contact() {
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Contact</h1>
       <p>
-        We'd love to hear from you! If you have any questions, comments, or feedback, please feel free to reach out to us.
+        We'd love to hear from you! If you have any questions, comments, or
+        feedback, please feel free to reach out to us.
       </p>
       <p>
         <strong>Email:</strong>
