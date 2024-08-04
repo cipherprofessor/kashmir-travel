@@ -48,19 +48,19 @@ const Header = () => {
             <span>Famous Tours</span>
             {isDropdownOpen && (
               <div className="dropdown-menu">
-                <NavLink to="/famous-tours/tour1" className="dropdown-link">
+                <NavLink to="/famous-tours/gulmarg" className="dropdown-link">
                   Gulmarg
                 </NavLink>
-                <NavLink to="/famous-tours/tour2" className="dropdown-link">
+                <NavLink to="/famous-tours/pahalgam" className="dropdown-link">
                   Pahalgam
                 </NavLink>
-                <NavLink to="/famous-tours/tour3" className="dropdown-link">
+                <NavLink to="/famous-tours/sonmarg" className="dropdown-link">
                   Sonmarg
                 </NavLink>
-                <NavLink to="/famous-tours/tour4" className="dropdown-link">
+                <NavLink to="/famous-tours/dallake" className="dropdown-link">
                   Dal Lake
                 </NavLink>
-                <NavLink to="/famous-tours/tour5" className="dropdown-link">
+                <NavLink to="/famous-tours/bangas" className="dropdown-link">
                   Bangas
                 </NavLink>
               </div>

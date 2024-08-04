@@ -1,0 +1,59 @@
+.slider-frame {
+    border: 5px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: 60px 10px 10px 10px;
+    width: 100%;
+    max-width: 1400px; /* Adjust the max width as per your design */
+    margin: 0 auto;
+    height: fit-content;
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+  
+  .control-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .control-button:hover {
+    background-color: #555;
+  }
+  
+  .preview-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .preview-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+  
