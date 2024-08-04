@@ -1,5 +1,8 @@
+// src/components/Header.jsx
+
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { LogIn, UserPlus } from 'lucide-react';
 import './Header.scss';
 
 const Header = () => {
@@ -67,10 +70,10 @@ const Header = () => {
             )}
           </div>
           <NavLink to="/login" className="nav-link login">
-            Login
+            Login <LogIn className="icon" size={16} />
           </NavLink>
           <NavLink to="/signup" className="nav-link signup">
-            Signup
+            Signup <UserPlus className="icon" size={16} />
           </NavLink>
         </div>
         <div className="menu-toggle">

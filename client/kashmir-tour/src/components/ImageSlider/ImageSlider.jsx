@@ -52,7 +52,7 @@ const ImageSlider = () => {
               className="preview-image"
             />
             <img
-              src="/src/assets/previous1.png"
+              src="/src/assets/icons/previous1.png"
               alt="Previous"
               className="control-button previous-button"
             />
@@ -67,7 +67,7 @@ const ImageSlider = () => {
               className="preview-image"
             />
             <img
-              src="/src/assets/next2.png"
+              src="/src/assets/icons/next2.png"
               alt="Next"
               className="control-button next-button"
             />
