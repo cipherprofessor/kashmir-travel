@@ -45,24 +45,28 @@ const ImageSlider = () => {
             <img
               src={images[(currentSlide - 1 + images.length) % images.length]}
               alt="Previous slide"
-              className="preview-image-previous"
+              className="preview-image"
             />
-            <button className="control-button previous-button">
-              <span className="button-text">Previous</span>
-            </button>
+            <img
+              src="/src/assets/previous1.png"
+              alt="Previous"
+              className="control-button previous-button"
+            />
           </div>
           <div
-            className="next-image-wrapper"
+            className="preview-image-wrapper"
             onClick={() => sliderRef.current.slickNext()}
           >
             <img
               src={images[(currentSlide + 1) % images.length]}
               alt="Next slide"
-              className="preview-image-next"
+              className="preview-image"
             />
-            <button className="control-button next-button">
-              <span className="button-text">Next</span>
-            </button>
+            <img
+              src="/src/assets/next2.png"
+              alt="Next"
+              className="control-button next-button"
+            />
           </div>
         </div>
       </div>
