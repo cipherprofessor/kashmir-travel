@@ -51,7 +51,7 @@ export const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-        main: colors.green[500],
+        main: colors.green[300],
     },
     background: {
       default: "#1f1d2c",

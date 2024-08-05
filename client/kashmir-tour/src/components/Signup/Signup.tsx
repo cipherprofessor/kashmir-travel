@@ -55,32 +55,32 @@ const SignupPage = () => {
               }}
             >
               <Typography variant="h6" fontWeight="bold" color="white">
-                CareerAI
+                Travel  Kashmir
               </Typography>
             </Box>
             {/* LOGO END */}
 
             <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4, marginBottom: 0 }} mt={7} mb={1}>
-              Simplifies connecting, augmenting your career
+              Travel Made Easy For You
             </Typography>
             <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', margin: 0 }} mt={7} mb={3}>
             </Typography>
             <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }} mt={7} mb={3}>
-              Sign up for ConnectU
+              Sign up 
             </Typography>
           </Box>
 
           {/* INPUTS */}
           <CustomInput
-            label="Username"
-            placeholder="Enter your username..."
+            label="Email ID"
+            placeholder="Enter your E-mail ID..."
             isIconActive={false}
           />
-          <CustomInput
+          {/* <CustomInput
             label="Email"
             placeholder="Enter your email..."
             isIconActive={false}
-          />
+          /> */}
           <CustomInput
             label="Password"
             placeholder="Enter your password..."

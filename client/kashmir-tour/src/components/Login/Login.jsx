@@ -63,18 +63,18 @@ const SigninPage = () => {
               }}
             >
               <Typography variant="h6" fontWeight="bold" color="white">
-                CareerAI
+                Kashmir
               </Typography>
             </Box>
             {/* LOGO END */}
 
             <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4, marginBottom: 0 }} mt={7} mb={1}>
-              Simplifies connecting, augmenting your career
+              Simplifies connecting, augmenting your travel
             </Typography>
             <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', margin: 0 }} mt={7} mb={3}>
             </Typography>
             <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }} mt={7} mb={3}>
-              Sign in to our ConnectU
+              Sign in 
             </Typography>
           </Box>
 

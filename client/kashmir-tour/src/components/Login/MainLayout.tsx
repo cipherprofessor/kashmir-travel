@@ -10,6 +10,7 @@ const MainLayout: React.FC<{ children: JSX.Element | JSX.Element[] }> = ({
       <Box
         sx={{
           backgroundImage: 'url("/src/assets/bg.png")',
+          // backgroundColor: "transparent",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",

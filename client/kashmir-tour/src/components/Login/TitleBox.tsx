@@ -33,7 +33,7 @@ const TitleBox: React.FC = () => {
             Join Our <br /> Community
           </Typography>
           <Typography variant="body1" fontWeight="" color="whitesmoke">
-            Create Your High-Level Cloud Network Service!
+            Travel Across Kashmir
           </Typography>
         </Box>
       </Box>
