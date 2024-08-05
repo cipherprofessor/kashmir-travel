@@ -76,7 +76,7 @@ function Header() {
               </div>
             )}
           </div>
-          <NavLink to="/login" className="nav-link login">
+          <NavLink to="/signin" className="nav-link login">
             Login
             {' '}
             <LogIn className="icon" size={16} />

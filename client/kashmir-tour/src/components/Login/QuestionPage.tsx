@@ -1,9 +1,11 @@
 import { Box, Button, Checkbox, colors, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import React from "react";
-import CustomInput from "../Login/CustomInput";
+import CustomInput from "./CustomInput";
+import CustomInput2 from "./CustomInput2";
 
-const SignupPage = () => {
+
+const QuestionPage: React.FC = () => {
   return (
     <Grid
       xs={12}
@@ -60,32 +62,44 @@ const SignupPage = () => {
             </Box>
             {/* LOGO END */}
 
-            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4, marginBottom: 0 }} mt={7} mb={1}>
-              Simplifies connecting, augmenting your career
-            </Typography>
-            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', margin: 0 }} mt={7} mb={3}>
+            {/* <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4,  marginBottom: 0}} mt={7} mb={1}>
+            Simplifies connecting, augmenting your career
+
+            </Typography> */}
+            {/* <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', margin: 0 }} mt={7} mb={3}>
             </Typography>
             <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }} mt={7} mb={3}>
-              Sign up for ConnectU
-            </Typography>
+              Sign in to our ConnectU
+            </Typography> */}
+
+
           </Box>
 
           {/* INPUTS */}
+          <br></br>
+          <br></br>
           <CustomInput
-            label="Username"
-            placeholder="Enter your username..."
+            label="Industry you are looking for"
+            placeholder=""
             isIconActive={false}
           />
-          <CustomInput
-            label="Email"
-            placeholder="Enter your email..."
+          <br></br>
+          <CustomInput2
+            label="Position you are looking for"
+            placeholder=""
             isIconActive={false}
           />
+          <br></br>
           <CustomInput
-            label="Password"
-            placeholder="Enter your password..."
+            label="How many connections do you want ?"
+            placeholder=""
+            isIconActive={false}
+          />
+          {/* <CustomInput
+            label="MFA Code"
+            placeholder="Enter your code..."
             isIconActive={true}
-          />
+          /> */}
           {/* INPUT END */}
 
           <Box
@@ -96,10 +110,10 @@ const SignupPage = () => {
             width="100%"
             color="white"
           >
-            <div style={{ display: "flex" }}>
+            {/* <div style={{ display: "flex" }}>
               <Checkbox disableRipple sx={{ p: 0, pr: 1 }} />
               <Typography>Remember me</Typography>
-            </div>
+            </div> */}
             <a
               href="#yoyo"
               style={{
@@ -107,7 +121,7 @@ const SignupPage = () => {
                 textDecoration: "none",
               }}
             >
-              Forget password?
+              {/* Forget password? */}
             </a>
           </Box>
           <Button
@@ -115,7 +129,7 @@ const SignupPage = () => {
             fullWidth
             sx={{ mt: 4, boxShadow: `0 0 20px ${colors.green[500]}` }}
           >
-            Sign Up
+            Submit
           </Button>
         </Box>
       </Box>
@@ -123,4 +137,4 @@ const SignupPage = () => {
   );
 };
 
-export default SignupPage;
+export default QuestionPage;

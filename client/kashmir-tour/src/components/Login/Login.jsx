@@ -1,39 +1,135 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-// client/src/components/Login/Login.jsx
-import React from 'react';
+import { Box, Button, Checkbox, colors, Typography } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
+import React from "react";
+import CustomInput from "./CustomInput";
+import { BrowserRouter, Route } from 'react-router-dom';
 
-function Login() {
+const SigninPage = () => {
+  // const navigate = useNavigate();
+  // console.log(navigate);
+  
+  // const gotoQuestion = useCallback(() => {
+  //   navigate("./QuestionPage")
+  // }, [navigate]);
+
   return (
-    <div className="container mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Login</h2>
-      <form className="space-y-4">
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Email
-          </label>
-          <input
-            type="email"
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Password
-          </label>
-          <input
-            type="password"
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          />
-        </div>
-        <button
-          type="submit"
-          className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        >
-          Login
-        </button>
-      </form>
-    </div>
-  );
-}
+    <Grid
+      xs={12}
+      sm={12}
+      md={6}
+      lg={6}
+      xl={6}
+      minHeight={550}
+      sx={{
+        boxShadow: {
+          xs: "",
+          sm: "",
+          md: "15px 2px 5px -5px",
+          lg: "15px 2px 5px -5px",
+          xl: "15px 2px 5px -5px",
+        },
+      }}
+    >
+      <Box
+        sx={{
+          backgroundColor: "rgba(0, 24, 57, 0.2)",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          height: "100%",
+          borderRadius: {
+            xs: "30px",
+            sm: "30px",
+            md: "30px 0 0 30px",
+            lg: "30px 0 0 30px",
+            xl: "30px 0 0 30px",
+          },
+        }}
+      >
+        <Box width="50%">
+          <Box display="flex" flexDirection="column" alignItems="center">
+            {/* LOGO */}
+            <Box
+              sx={{
+                mt: "60px",
+                width: "150px",
+                height: "50px",
+                bgcolor: "primary.main",
+                borderRadius: "12px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: `0 0 20px ${colors.green[500]}`,
+              }}
+            >
+              <Typography variant="h6" fontWeight="bold" color="white">
+                CareerAI
+              </Typography>
+            </Box>
+            {/* LOGO END */}
 
-export default Login;
+            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4, marginBottom: 0 }} mt={7} mb={1}>
+              Simplifies connecting, augmenting your career
+            </Typography>
+            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', margin: 0 }} mt={7} mb={3}>
+            </Typography>
+            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }} mt={7} mb={3}>
+              Sign in to our ConnectU
+            </Typography>
+          </Box>
+
+          {/* INPUTS */}
+          <CustomInput
+            label="Login"
+            placeholder="Enter your login..."
+            isIconActive={false}
+          />
+          <CustomInput
+            label="Password"
+            placeholder="Enter your password..."
+            isIconActive={true}
+          />
+          {/* <CustomInput
+            label="MFA Code"
+            placeholder="Enter your code..."
+            isIconActive={true}
+          /> */}
+          {/* INPUT END */}
+
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent="space-between"
+            mt={2}
+            width="100%"
+            color="white"
+          >
+            <div style={{ display: "flex" }}>
+              <Checkbox disableRipple sx={{ p: 0, pr: 1 }} />
+              <Typography>Remember me</Typography>
+            </div>
+            <a
+              href="#yoyo"
+              style={{
+                color: colors.green[500],
+                textDecoration: "none",
+              }}
+            >
+              Forget password?
+            </a>
+          </Box>
+          <Button
+            // onClick={gotoQuestion}
+            variant="contained"
+            fullWidth
+            sx={{ mt: 4, boxShadow: `0 0 20px ${colors.green[500]}` }}
+          >
+            Login
+          </Button>
+        </Box>
+      </Box>
+    </Grid>
+  );
+};
+
+export default SigninPage;
