@@ -46,7 +46,7 @@ const SigninPage = () => {
           },
         }}
       >
-        <Box width="50%">
+        <Box width="70%">
           <Box display="flex" flexDirection="column" alignItems="center">
             {/* LOGO */}
             <Box

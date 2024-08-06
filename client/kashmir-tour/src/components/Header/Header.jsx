@@ -88,7 +88,6 @@ function Header() {
           </NavLink>
         </div>
         <div className="menu-toggle">
-          // eslint-disable-next-line jsx-a11y/control-has-associated-label
           <button id="menu-toggle">
             <svg
               className="menu-toggle-icon"

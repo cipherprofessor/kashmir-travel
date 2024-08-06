@@ -38,13 +38,13 @@ const SignupPage = () => {
           },
         }}
       >
-        <Box width="50%">
+        <Box width="70%">
           <Box display="flex" flexDirection="column" alignItems="center">
             {/* LOGO */}
             <Box
               sx={{
                 mt: "60px",
-                width: "150px",
+                width: "160px",
                 height: "50px",
                 bgcolor: "primary.main",
                 borderRadius: "12px",
@@ -55,7 +55,7 @@ const SignupPage = () => {
               }}
             >
               <Typography variant="h6" fontWeight="bold" color="white">
-                Travel  Kashmir
+                Kashmir
               </Typography>
             </Box>
             {/* LOGO END */}

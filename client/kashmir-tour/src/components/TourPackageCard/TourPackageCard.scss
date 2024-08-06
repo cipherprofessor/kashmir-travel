@@ -46,7 +46,7 @@
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 0.5rem;
     cursor: pointer;
@@ -79,12 +79,14 @@
   .tour-package-title {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    color: #ffffff;
   }
 
   .tour-package-description {
     font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 25px;
+    color: #ffffff;
   }
 
   .tour-package-details {
@@ -108,13 +110,14 @@
 
   .detail-text {
     font-size: 1rem;
-    color: #333;
+    color: #ffffff;
   }
 
   .tour-package-price {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: #ffffff;
   }
 
   .tour-package-buy-btn {
