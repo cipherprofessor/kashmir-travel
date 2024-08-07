@@ -1,0 +1,28 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap; // Allows cards to wrap to the next line if they overflow
+    justify-content: space-between;
+    margin: 20px;
+  
+    .card {
+      flex: 1 1 calc(20% - 2rem);
+      margin: 1rem;
+  
+      @media (max-width: 1200px) {
+        flex: 1 1 calc(25% - 2rem);
+      }
+  
+      @media (max-width: 900px) {
+        flex: 1 1 calc(33.33% - 2rem);
+      }
+  
+      @media (max-width: 600px) {
+        flex: 1 1 calc(50% - 2rem);
+      }
+  
+      @media (max-width: 400px) {
+        flex: 1 1 100%;
+      }
+    }
+  }
+  

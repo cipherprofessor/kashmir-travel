@@ -1,0 +1,23 @@
+.recipe-card {
+    transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    margin: 50px;
+    width: 30%;
+    
+    &:hover {
+      transform: scale(1.02); // Slightly less scale to avoid too much zoom
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.273);
+    }
+  
+    .MuiCardMedia-root {
+      object-fit: cover;
+    }
+    
+    .MuiCardHeader-root {
+      border-bottom: 1px solid #ddd; // Optional: add a border for better separation
+    }
+  
+    .MuiCardActions-root {
+      justify-content: space-between; // Optional: adjust the alignment of action buttons
+    }
+  }
+  
