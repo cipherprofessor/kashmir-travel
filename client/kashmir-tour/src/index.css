@@ -16,10 +16,11 @@ body {
 /* client/src/index.css */
 
 body {
-  background-image: url("/src/assets/bg.png");
+  /* background-image: url("/src/assets/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
   font-family: "Lato", sans-serif;
   color: rgb(255, 255, 255);
 }
