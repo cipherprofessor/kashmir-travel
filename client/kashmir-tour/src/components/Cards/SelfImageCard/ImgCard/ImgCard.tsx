@@ -1,5 +1,5 @@
-import React from 'react';
-import './ImgCard.scss';
+import React from "react";
+import "./ImgCard.scss";
 
 interface CardComponentProps {
   image: string;
@@ -9,18 +9,32 @@ interface CardComponentProps {
   instagramUrl: string;
 }
 
-const ImgCard: React.FC<CardComponentProps> = ({ image, heading, subheading, linkedInUrl, instagramUrl }) => {
+const ImgCard: React.FC<CardComponentProps> = ({
+  image,
+  heading,
+  subheading,
+  linkedInUrl,
+  instagramUrl,
+}) => {
   return (
     <div className="card">
       <img src={image} alt={heading} className="card-image" />
       <h2 className="card-heading">{heading}</h2>
-      <h3 className="card-subheading">{subheading}</h3>
+      <div className="card-subheading">{subheading}</div>
       <div className="card-buttons">
         <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
-          <button className="card-button">LinkedIn</button>
+          <img
+            src="/src/assets/socialmediaicons/glasslinkedin.png"
+            alt="Instagram"
+            className="card-icon"
+          />
         </a>
         <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-          <button className="card-button">Instagram</button>
+          <img
+            src="/src/assets/socialmediaicons/glassinsta.png"
+            alt="Instagram"
+            className="card-icon"
+          />
         </a>
       </div>
     </div>

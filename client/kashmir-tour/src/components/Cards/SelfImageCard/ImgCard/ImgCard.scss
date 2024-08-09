@@ -12,8 +12,11 @@
   max-height: 430px;
 
   &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(255, 255, 255, 0.3);
+    transform: scale(1.15);
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15),
+      0 6px 20px rgba(255, 255, 255, 0.3);
+    // box-shadow: 0 0 20px rgba(0, 255, 255, 0.273);
     border-color: rgba(255, 255, 255, 0.5);
   }
 }
@@ -34,7 +37,7 @@
 
 .card-subheading {
   margin-bottom: 16px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #ffffff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -42,30 +45,20 @@
 .card-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 50px;
+  margin-top: 30px;
 
-  .card-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+  .card-icon {
+    width: 82px; /* Adjust the size of the icon */
+    height: 82px; /* Adjust the size of the icon */
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 14px;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.3);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    &:nth-child(2) {
-      background-color: rgba(228, 64, 95, 0.3);
-
-      &:hover {
-        background-color: rgba(228, 64, 95, 0.5);
-      }
+      transform: scale(1.2);
+      // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      // border-radius: 30px;
     }
   }
 }
