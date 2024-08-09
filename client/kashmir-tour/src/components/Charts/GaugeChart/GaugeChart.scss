@@ -1,0 +1,19 @@
+svg {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .gauge {
+    fill: lightgreen;
+    stroke: black;
+    stroke-width: 1px;
+  }
+  
+  .gauge-center {
+    fill: white;
+    stroke: black;
+    stroke-width: 1px;
+  }
+  
