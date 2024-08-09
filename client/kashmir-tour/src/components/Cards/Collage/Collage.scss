@@ -1,0 +1,36 @@
+.collage-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh; // Full viewport height
+  
+    .text-container {
+      width: 50%;
+      padding: 20px;
+      font-size: 1.5rem;
+      color: #f7f7f7;
+    }
+  
+    .collage {
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // 2 columns grid
+      grid-template-rows: repeat(2, 1fr); // 2 rows grid
+      gap: 10px; // Space between the images
+  
+      .collage-item {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; // Ensure the image covers the whole square
+        }
+      }
+    }
+  }
+  

@@ -8,13 +8,23 @@
   overflow: hidden;
   margin: 1rem;
   text-align: center;
-  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.187);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  // box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.187);
+  // transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  background: rgba(255, 255, 255, 0.221); /* White background with transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(255, 255, 255, 0.2); /* Multiple soft shadows */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.273);
     border-color: #00bbd47e;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15),
+      0 6px 20px rgba(255, 255, 255, 0.3);
+    // box-shadow: 0 0 20px rgba(0, 255, 255, 0.273);
+    border-color: rgba(255, 255, 255, 0.5);
 
     .carousel-wrapper {
       transition: transform 1s ease-in-out;

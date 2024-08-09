@@ -2,9 +2,17 @@
 /* eslint-disable react/no-unescaped-entities */
 // client/src/pages/Contact/Contact.jsx
 import React from 'react';
+import ImgCardMap from '../../components/Cards/SelfImageCard/ImgCardMap/ImgCardMap';
 
 function Contact() {
   return (
+
+
+    <>
+    {/* <p>Mohsin</p> */}
+    {/* <CardList /> */}
+    {/* <RecipeReviewCard /> */}
+    
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Contact</h1>
       <p>
@@ -27,6 +35,13 @@ function Contact() {
         123 Travel Street, Adventure City, World
       </p>
     </div>
+    
+    <ImgCardMap />
+
+
+     </>
+
+
   );
 }
 

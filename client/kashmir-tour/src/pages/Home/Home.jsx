@@ -3,6 +3,7 @@ import React from 'react';
 import './Home.scss';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import TourPackageCard from '../../components/TourPackageCard/TourPackageCard';
+import CollageMapping from '../../components/MultiMapping/Collage/CollageMapping';
 
 function Home() {
   const tourPackages = [
@@ -78,6 +79,9 @@ function Home() {
             />
           ))}
         </div>
+      </section>
+      < section className='collage'>
+      <CollageMapping />
       </section>
     </div>
   );
