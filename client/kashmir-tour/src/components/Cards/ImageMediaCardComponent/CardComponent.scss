@@ -7,7 +7,7 @@
     .card {
       flex: 1 1 calc(20% - 2rem);
       margin: 1rem;
-  
+    }
       @media (max-width: 1200px) {
         flex: 1 1 calc(25% - 2rem);
       }
@@ -24,5 +24,5 @@
         flex: 1 1 100%;
       }
     }
-  }
+
   
