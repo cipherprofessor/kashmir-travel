@@ -15,7 +15,7 @@ import SankeyChart from '../SankeyChart/SankeyChart';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 import 'react-grid-layout/css/styles.css';
 import './EChartsReactDashboard.scss';
-import DonutChart from '../DonuChart/DonutChart';
+import DonutChart from '../DonutChart/DonutChart';
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -58,7 +58,7 @@ const EChartsReactDashboard = () => {
         <div key="donutChart" className="grid-item">
           <DonutChart />
         </div>
-        <div key="pieChart" className="grid-item">
+        {/* <div key="pieChart" className="grid-item">
           <PieChart />
         </div>
         <div key="lineChart" className="grid-item">
@@ -96,7 +96,7 @@ const EChartsReactDashboard = () => {
         </div>
         <div key="sankeyChart" className="grid-item">
           <SankeyChart />
-        </div>
+        </div> */}
       </ResponsiveGridLayout>
     </div>
   );
