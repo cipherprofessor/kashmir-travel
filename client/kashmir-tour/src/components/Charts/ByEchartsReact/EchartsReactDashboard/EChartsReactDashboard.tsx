@@ -12,11 +12,24 @@ import CandlestickChart from '../CandlestickChart/CandlestickChart';
 import BoxplotChart from '../BoxplotChart/BoxplotChart';
 import SunburstChart from '../SunburstChart/SunburstChart';
 import SankeyChart from '../SankeyChart/SankeyChart';
-import { Responsive, WidthProvider } from 'react-grid-layout';
-import 'react-grid-layout/css/styles.css';
-import './EChartsReactDashboard.scss';
 import DonutChart from '../DonutChart/DonutChart';
 import CalendarChart from '../CalendarChart/CalendarChart';
+import TreeChart from '../TreeChart/TreeChart';
+
+import ParallelCoordinatesChart from '../ParallelCoordinatesChart/ParallelCoordinatesChart';
+import PolarChart from '../PolarChart/PolarChart';
+import PictorialBarChart from '../PictorialBarChart/PictorialBarChart';
+import WordCloudChart from  '../WordCloudChart/WordCloudChart';
+
+import LiquidFillChart from '../LiquidFillChart/LiquidFillChart';
+import { Responsive, WidthProvider } from 'react-grid-layout';
+
+import 'echarts-wordcloud';
+import 'echarts-liquidfill';
+
+
+import 'react-grid-layout/css/styles.css';
+import './EChartsReactDashboard.scss';
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -45,15 +58,26 @@ const layout = [
   { i: 'sunburstChart', x: 0, y: 16, w: 4.5, h: 4 },
   { i: 'sankeyChart', x: 4.5, y: 16, w: 4.5, h: 4 },
   { i: 'CalendarChart', x: 9, y: 16, w: 5, h: 2.7 },
-];
 
+  // Sixth Row
+  { i: 'treeChart', x: 0, y: 20, w: 4.5, h: 4 },
+  { i: 'treemapChart', x: 4.5, y: 20, w: 4.5, h: 4 },
+  { i: 'parallelCoordinatesChart', x: 9, y: 20, w: 4.5, h: 4 },
+
+  // Seventh Row
+  { i: 'polarChart', x: 0, y: 24, w: 4.5, h: 4 },
+  { i: 'pictorialBarChart', x: 4.5, y: 24, w: 4.5, h: 4 },
+  { i: 'wordCloudChart', x: 9, y: 24, w: 4.5, h: 4 },
+
+  // Eighth Row
+  { i: 'liquidFillChart', x: 0, y: 28, w: 4.5, h: 4 },
+];
 
 const EChartsReactDashboard = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleTheme = () => {
     setIsDarkMode(prevMode => !prevMode);
-    console.log(isDarkMode); // Check if the state is toggling
   };
 
   return (
@@ -111,6 +135,27 @@ const EChartsReactDashboard = () => {
         </div>
         <div key="CalendarChart" className="grid-item">
           <CalendarChart />
+        </div>
+        <div key="treeChart" className="grid-item">
+          <TreeChart />
+        </div>
+        <div key="treemapChart" className="grid-item">
+          <TreeChart />
+        </div>
+        <div key="parallelCoordinatesChart" className="grid-item">
+          <ParallelCoordinatesChart />
+        </div>
+        <div key="polarChart" className="grid-item">
+          <PolarChart />
+        </div>
+        <div key="pictorialBarChart" className="grid-item">
+          <PictorialBarChart />
+        </div>
+        <div key="wordCloudChart" className="grid-item">
+          <WordCloudChart />
+        </div>
+        <div key="liquidFillChart" className="grid-item">
+          <LiquidFillChart />
         </div>
       </ResponsiveGridLayout>
     </div>
