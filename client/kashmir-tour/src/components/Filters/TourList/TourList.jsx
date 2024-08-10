@@ -1,7 +1,11 @@
+import React from 'react';
+import './TourList.scss';
+
 const TourList = ({ tours }) => {
-    return (
-      <div className="tour-list">
-        {tours.map(tour => (
+  return (
+    <div className="tour-list">
+      {tours.length > 0 ? (
+        tours.map(tour => (
           <div key={tour.id} className="tour-card">
             <h3>{tour.name}</h3>
             <p>Price: {tour.price}</p>
@@ -10,8 +14,12 @@ const TourList = ({ tours }) => {
             <p>Type: {tour.type}</p>
             <p>Place: {tour.place}</p>
           </div>
-        ))}
-      </div>
-    );
-  };
-  
+        ))
+      ) : (
+        <p>No tours found</p>
+      )}
+    </div>
+  );
+};
+
+export default TourList;

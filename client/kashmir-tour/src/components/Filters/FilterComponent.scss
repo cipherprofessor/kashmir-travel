@@ -1,27 +1,19 @@
 .filter-component {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 300px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  
     .filter-section {
-      margin-bottom: 20px;
+      margin-bottom: 1rem;
       
       label {
-        font-weight: bold;
-        margin-bottom: 8px;
         display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
       }
-      
+  
       .price-range {
         display: flex;
-        justify-content: space-between;
-        
+        gap: 1rem;
+  
         .MuiTextField-root {
-          width: 48%;
+          flex: 1;
         }
       }
     }

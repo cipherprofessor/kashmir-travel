@@ -1,0 +1,14 @@
+.all-tours-page {
+    display: flex;
+    gap: 2rem;
+  
+    .filter-component {
+      flex: 1;
+      max-width: 300px;
+    }
+  
+    .tour-list {
+      flex: 3;
+    }
+  }
+  
