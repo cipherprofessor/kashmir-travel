@@ -24,16 +24,16 @@ const layout = [
   // First Row
   { i: 'donutChart', x: 0, y: 0, w: 8, h: 3.8 },
   { i: 'pieChart', x: 8, y: 0, w: 4, h: 3.8 },
-  { i: 'lineChart', x: 12, y: 0, w: 4, h: 3.8 },
+  { i: 'lineChart', x: 12, y: 0, w: 4.5, h: 3.8 },
 
   // Second Row
   { i: 'areaChart', x: 0, y: 4, w: 5, h: 4 },
-  { i: 'radarChart', x: 5, y: 4, w: 4, h: 4 },
-  { i: 'gaugeChart', x: 9, y: 4, w: 4, h: 4 },
+  { i: 'radarChart', x: 5, y: 4, w: 5, h: 4 },
+  { i: 'gaugeChart', x: 9, y: 4, w: 4, h: 3.5 },
 
   // Third Row
   { i: 'barChart', x: 0, y: 8, w: 5, h: 4 },
-  { i: 'scatterChart', x: 5, y: 8, w: 4.5, h: 4 },
+  { i: 'scatterChart', x: 5, y: 8, w: 4.6, h: 4 },
   { i: 'funnelChart', x: 9, y: 8, w: 5, h: 4 },
 
   // Fourth Row

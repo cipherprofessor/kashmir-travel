@@ -6,6 +6,7 @@ const GaugeChart = () => {
   const getOption = () => ({
     title: {
       text: 'Speedometer',
+      
     },
     tooltip: {
       formatter: "{a} <br/>{b} : {c}%",
@@ -15,7 +16,7 @@ const GaugeChart = () => {
         name: 'Speed',
         type: 'gauge',
         detail: { formatter: '{value}%' },
-        data: [{ value: 50, name: 'Speed' }],
+        data: [{ value: 90, name: 'Speed' }],
         itemStyle: {
           color: '#e67e22',
         },
