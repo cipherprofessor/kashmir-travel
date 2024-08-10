@@ -49,7 +49,7 @@ const ChartDashboard = () => {
       <div key="barChart1" className="grid-item glassmorphic">
         <BarChart data={[{ label: 'Red', value: 12 }, { label: 'Blue', value: 19 }, { label: 'Yellow', value: 3 }]} width={400} height={300} />
       </div>
-      <div key="donutChart1" className="grid-item glassmorphic">
+      {/* <div key="donutChart1" className="grid-item glassmorphic">
         <DonutChart data={[{ label: 'Red', value: 300 }, { label: 'Blue', value: 50 }, { label: 'Yellow', value: 100 }]} width={300} height={300} />
       </div>
       <div key="halfDonutChart1" className="grid-item glassmorphic">
@@ -105,7 +105,7 @@ const ChartDashboard = () => {
       </div>
       <div key="gaugeChart2" className="grid-item glassmorphic">
         <GaugeChart value={50} width={400} height={200} />
-      </div>
+      </div> */}
     </ResponsiveGridLayout>
   );
 };

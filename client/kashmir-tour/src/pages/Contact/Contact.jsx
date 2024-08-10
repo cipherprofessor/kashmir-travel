@@ -4,7 +4,8 @@
 import React from 'react';
 import ImgCardMap from '../../components/Cards/SelfImageCard/ImgCardMap/ImgCardMap';
 import MyPackeryLayout from '../../components/PackeryLayout/PackeryLayout';
-import ChartDashboard from '../../components/Charts/ChartsDashboard/ChartsDashboard';
+// import ChartDashboard from '../../components/Charts/ChartsDashboard/ChartsDashboard';
+import EChartsReactDashboard from '../../components/Charts/ByEchartsReact/EchartsReactDashboard/EChartsReactDashboard';
 
 
 function Contact() {
@@ -16,7 +17,8 @@ function Contact() {
 
     {/* < MyPackeryLayout /> */}
 
-< ChartDashboard />
+{/* < ChartDashboard /> */}
+<EChartsReactDashboard />
      </>
 
 
