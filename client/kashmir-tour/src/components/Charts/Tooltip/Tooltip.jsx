@@ -3,10 +3,10 @@ import './Tooltip.scss';
 
 const Tooltip = ({ title, value, x, y, className }) => {
   const tooltipStyle = {
-    left: x + 10, // Adjust the position as needed
-    top: y + 10, // Adjust the position as needed
+    left: `${x}px`, // Absolute positioning
+    top: `${y}px`,
     position: 'absolute',
-    transform: 'translate(-50%, -100%)', // Centers the tooltip
+    transform: 'translate(-50%, -100%)', // Centers the tooltip above the cursor
   };
 
   return (

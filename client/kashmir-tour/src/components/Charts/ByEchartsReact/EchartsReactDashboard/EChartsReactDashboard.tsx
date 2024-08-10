@@ -20,7 +20,7 @@ import DonutChart from '../DonutChart/DonutChart';
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const layout = [
-  { i: 'donutChart', x: 0, y: 0, w: 5, h: 3.8 },
+  { i: 'donutChart', x: 0, y: 0, w: 8, h: 3.8 },
   { i: 'pieChart', x: 4, y: 0, w: 4, h: 3.8 },
   { i: 'lineChart', x: 8, y: 0, w: 4, h: 3.8 },
   { i: 'areaChart', x: 0, y: 4, w: 4, h: 4 },

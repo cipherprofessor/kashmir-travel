@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactEcharts from 'echarts-for-react';
-import Tooltip from '../../Tooltip/Tooltip';
 import './DonutChart.scss';
 
 const DonutChart = () => {
-  const [tooltipData, setTooltipData] = useState(null);
-  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
-
   const chartData = [
     { value: 325, name: 'Direct' },
     { value: 310, name: 'Email' },
@@ -33,11 +29,16 @@ const DonutChart = () => {
       formatter: function (params) {
         return `${params.name}: ${params.value}`;
       },
-      show: false, // Disable the default tooltip
+      backgroundColor: 'rgb(0, 0, 0)', // Adjust as needed
+      borderRadius: 4,
+      padding: 8,
+      textStyle: {
+        color: '#fff',
+      },
     },
     legend: {
       orient: 'vertical',
-      right: 0,
+      right: 10,
       top: 'center',
       formatter: function (name) {
         const dataItem = chartData.find(item => item.name === name);
@@ -49,20 +50,18 @@ const DonutChart = () => {
         name: 'Traffic Source',
         type: 'pie',
         radius: ['50%', '70%'],
-        avoidLabelOverlap: false,
+        avoidLabelOverlap: true,
         label: {
           show: false,
           position: 'center',
         },
         emphasis: {
           label: {
-            show: true,
-            fontSize: '18',
-            fontWeight: 'bold',
+            show: false, // Ensure label does not show on hover
           },
         },
         labelLine: {
-          show: false,
+          show: true,
         },
         data: chartData,
       },
@@ -73,7 +72,7 @@ const DonutChart = () => {
         left: 'center',
         top: 'center',
         style: {
-          text: `All Sources\n${totalValue}`,
+          text: `All Sources\n\n${totalValue}`,
           textAlign: 'center',
           fill: '#333',
           fontSize: 16,
@@ -84,60 +83,14 @@ const DonutChart = () => {
     ],
   });
 
-  const handleChartHover = (params, event) => {
-    if (event && event.event) {
-      setTooltipData({
-        title: params.name,
-        value: params.value,
-      });
-
-      const chartRect = event.event.currentTarget.getBoundingClientRect();
-      setTooltipPosition({
-        x: event.event.clientX - chartRect.left,
-        y: event.event.clientY - chartRect.top,
-      });
-    }
-  };
-
-  const handleLegendHover = (name, event) => {
-    const dataItem = chartData.find(item => item.name === name);
-    setTooltipData({
-      title: name,
-      value: dataItem ? dataItem.value : 'N/A',
-    });
-
-    setTooltipPosition({
-      x: event.clientX,
-      y: event.clientY,
-    });
-  };
-
-  const handleMouseOut = () => {
-    setTooltipData(null);
-  };
-
   return (
-    <div className="donut-chart-wrapper" style={{ position: 'relative' }}>
+    <div className="donut-chart-wrapper">
       <div className="donut-chart-container">
         <ReactEcharts
           option={getOption()}
           className="donut-chart"
-          onEvents={{
-            'mouseover': handleChartHover,
-            'mouseout': handleMouseOut,
-            'legendselectchanged': handleLegendHover,
-          }}
         />
       </div>
-      {tooltipData && (
-        <Tooltip
-          title={tooltipData.title}
-          value={tooltipData.value}
-          x={tooltipPosition.x}
-          y={tooltipPosition.y}
-          className="custom-tooltip"
-        />
-      )}
     </div>
   );
 };
