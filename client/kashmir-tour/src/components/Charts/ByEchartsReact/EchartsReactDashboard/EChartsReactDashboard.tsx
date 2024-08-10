@@ -16,25 +16,37 @@ import { Responsive, WidthProvider } from 'react-grid-layout';
 import 'react-grid-layout/css/styles.css';
 import './EChartsReactDashboard.scss';
 import DonutChart from '../DonutChart/DonutChart';
+import CalendarChart from '../CalendarChart/CalendarChart';
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const layout = [
+  // First Row
   { i: 'donutChart', x: 0, y: 0, w: 8, h: 3.8 },
-  { i: 'pieChart', x: 4, y: 0, w: 4, h: 3.8 },
-  { i: 'lineChart', x: 8, y: 0, w: 4, h: 3.8 },
-  { i: 'areaChart', x: 0, y: 4, w: 4, h: 4 },
-  { i: 'radarChart', x: 4, y: 4, w: 4, h: 4 },
-  { i: 'gaugeChart', x: 8, y: 4, w: 4, h: 4 },
+  { i: 'pieChart', x: 8, y: 0, w: 4, h: 3.8 },
+  { i: 'lineChart', x: 12, y: 0, w: 4, h: 3.8 },
+
+  // Second Row
+  { i: 'areaChart', x: 0, y: 4, w: 5, h: 4 },
+  { i: 'radarChart', x: 5, y: 4, w: 4, h: 4 },
+  { i: 'gaugeChart', x: 9, y: 4, w: 4, h: 4 },
+
+  // Third Row
   { i: 'barChart', x: 0, y: 8, w: 5, h: 4 },
-  { i: 'scatterChart', x: 4, y: 8, w: 4, h: 4 },
-  { i: 'funnelChart', x: 8, y: 8, w: 4, h: 4 },
-  { i: 'heatmapChart', x: 0, y: 12, w: 4, h: 4 },
-  { i: 'candlestickChart', x: 4, y: 12, w: 4, h: 4 },
-  { i: 'boxplotChart', x: 8, y: 12, w: 4, h: 4 },
-  { i: 'sunburstChart', x: 0, y: 16, w: 4, h: 4 },
-  { i: 'sankeyChart', x: 4, y: 16, w: 4, h: 4 },
+  { i: 'scatterChart', x: 5, y: 8, w: 4.5, h: 4 },
+  { i: 'funnelChart', x: 9, y: 8, w: 5, h: 4 },
+
+  // Fourth Row
+  { i: 'heatmapChart', x: 0, y: 12, w: 4.5, h: 4 },
+  { i: 'candlestickChart', x: 4.5, y: 12, w: 4.5, h: 4 },
+  { i: 'boxplotChart', x: 9, y: 12, w: 4.5, h: 4 },
+
+  // Fifth Row
+  { i: 'sunburstChart', x: 0, y: 16, w: 4.5, h: 4 },
+  { i: 'sankeyChart', x: 4.5, y: 16, w: 4.5, h: 4 },
+  { i: 'CalendarChart', x: 9, y: 16, w: 5, h: 2.7 },
 ];
+
 
 const EChartsReactDashboard = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -58,7 +70,7 @@ const EChartsReactDashboard = () => {
         <div key="donutChart" className="grid-item">
           <DonutChart />
         </div>
-        {/* <div key="pieChart" className="grid-item">
+        <div key="pieChart" className="grid-item">
           <PieChart />
         </div>
         <div key="lineChart" className="grid-item">
@@ -96,7 +108,10 @@ const EChartsReactDashboard = () => {
         </div>
         <div key="sankeyChart" className="grid-item">
           <SankeyChart />
-        </div> */}
+        </div>
+        <div key="CalendarChart" className="grid-item">
+          <CalendarChart />
+        </div>
       </ResponsiveGridLayout>
     </div>
   );
