@@ -1,36 +1,57 @@
 .filter-component {
-    padding: 16px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  
-    .filter-section {
-      margin-bottom: 16px;
-  
-      label {
-        display: block;
-        margin-bottom: 8px;
+  h2 {
+    margin-bottom: 1rem;
+    color: black;
+  }
+
+  .filter-section {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: black;
+    }
+
+    .react-select__control {
+      color: black;
+    }
+
+    .slider-container {
+      display: flex;
+      align-items: center;
+
+      input[type="range"] {
+        flex-grow: 1;
+        margin-right: 1rem;
+      }
+
+      .price-display {
         font-weight: bold;
+        color: black;
       }
-  
-      .price-range {
-        display: flex;
-        gap: 8px;
-  
-        input {
-          width: 100px;
-        }
-      }
-  
-      .react-select-container {
-        width: 100%;
-      }
-  
-      input[type='text'] {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
+    }
+
+    .price-range {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: 48%;
       }
     }
   }
-  
+
+  .clear-filters-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+}

@@ -13,6 +13,33 @@ const toursData = [
     type: 'Adventure',
     place: 'Kashmir',
   },
+  {
+    id: '2',
+    name: 'Cultural Tour',
+    price: 2000,
+    length: '11 days',
+    groupSize: '6-10',
+    type: 'Adventure',
+    place: 'Jammu',
+  },
+  {
+    id: '3',
+    name: 'Cultural Tour',
+    price: 2000,
+    length: '11 days',
+    groupSize: '6-10',
+    type: 'Adventure',
+    place: 'Jammu',
+  },
+  {
+    id: '4',
+    name: 'Cultural Tour',
+    price: 2000,
+    length: '11 days',
+    groupSize: '6-10',
+    type: 'Adventure',
+    place: 'Jammu',
+  },
   // Add more tour data here
 ];
 
