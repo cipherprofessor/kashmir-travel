@@ -6,12 +6,12 @@ import FilterComponent from '../../components/Filters/ReactSelect/FilterComponen
 const toursData = [
   {
     id: '1',
-    name: 'Adventure Tour',
+    name: 'Adventure',
     price: 30000,
     length: '4-7 days',
-    groupSize: '6-10',
+    groupSize: '6',
     type: 'Adventure',
-    place: 'Kashmir',
+    place: 'Ladakh',
   },
   {
     id: '2',
@@ -19,13 +19,13 @@ const toursData = [
     price: 2000,
     length: '11 days',
     groupSize: '6-10',
-    type: 'Adventure',
-    place: 'Jammu',
+    type: 'Luxury',
+    place: 'Bangus',
   },
   {
     id: '3',
-    name: 'Cultural Tour',
-    price: 2000,
+    name: 'Cultural',
+    price: 200000,
     length: '11 days',
     groupSize: '21+',
     type: 'Cultural',
@@ -33,16 +33,42 @@ const toursData = [
   },
   {
     id: '4',
-    name: 'Cultural Tour',
+    name: 'Luxury',
     price: 300000,
     length: '11 days',
     groupSize: '2',
     type: 'Romantic',
     place: 'Gulmarg',
   },
+  {
+    id: '5',
+    name: 'Adventure',
+    price: 300000,
+    length: '11 days',
+    groupSize: '1-5',
+    type: 'Romantic',
+    place: 'Kokernag',
+  },
+  {
+    id: '6',
+    name: 'Adventure',
+    price: 300000,
+    length: '11 days',
+    groupSize: '1-5',
+    type: 'Romantic',
+    place: 'Sonmarg',
+  },
+  {
+    id: '7',
+    name: 'Adventure',
+    price: 300000,
+    length: '11 days',
+    groupSize: '1-5',
+    type: 'Romantic',
+    place: 'Srinagar',
+  },
   // Add more tour data here
 ];
-
 const AllTours = () => {
   const [filters, setFilters] = useState({});
 
@@ -54,27 +80,51 @@ const AllTours = () => {
     return toursData.filter((tour) => {
       const { priceFilter, priceRange, tourLength, groupSize, searchPlace, tourType } = filters;
 
-      // Apply filtering logic based on filters
       if (priceFilter === 'slider' && priceRange) {
         if (tour.price < priceRange[0] || tour.price > priceRange[1]) {
           return false;
         }
       }
-      if (tourLength && tour.length !== tourLength) {
+      if (tourLength && !isTourLengthMatching(tour.length, tourLength)) {
         return false;
       }
-      if (groupSize && tour.groupSize !== groupSize) {
+      if (groupSize && !isGroupSizeMatching(tour.groupSize, groupSize)) {
         return false;
       }
       if (searchPlace && !tour.place.toLowerCase().includes(searchPlace.toLowerCase())) {
         return false;
       }
-      if (tourType && tour.type !== tourType) {
+      if (tourType && tour.type.toLowerCase() !== tourType.toLowerCase()) {
         return false;
       }
       return true;
     });
   }, [filters]);
+
+  // Function to check if tour length matches selected length
+  function isTourLengthMatching(tourLength, selectedTourLength) {
+    return tourLength === selectedTourLength;
+  }
+
+  // Function to check if group size matches selected size range
+  function isGroupSizeMatching(tourGroupSize, selectedGroupSize) {
+    const tourSizeRange = parseGroupSize(tourGroupSize);
+    const selectedSizeRange = parseGroupSize(selectedGroupSize);
+
+    return selectedSizeRange.some(size => tourSizeRange.includes(size));
+  }
+
+  // Function to parse group size string into an array of numbers
+  function parseGroupSize(sizeRange) {
+    const ranges = sizeRange.split('-').map(Number);
+    if (ranges.length === 1) {
+      return [ranges[0]];
+    } else if (ranges.length === 2) {
+      return Array.from({ length: ranges[1] - ranges[0] + 1 }, (_, i) => i + ranges[0]);
+    } else {
+      return [Number(sizeRange.replace('+', ''))];
+    }
+  }
 
   return (
     <div className="all-tours-page">
@@ -88,16 +138,20 @@ const AllTours = () => {
 const TourList = ({ tours }) => {
   return (
     <div className="tour-list">
-      {tours.map((tour) => (
-        <div key={tour.id} className="tour-card">
-          <h3>{tour.name}</h3>
-          <p>Price: {tour.price}</p>
-          <p>Length: {tour.length}</p>
-          <p>Group Size: {tour.groupSize}</p>
-          <p>Type: {tour.type}</p>
-          <p>Place: {tour.place}</p>
-        </div>
-      ))}
+      {tours.length === 0 ? (
+        <p>No tours available</p>
+      ) : (
+        tours.map((tour) => (
+          <div key={tour.id} className="tour-card">
+            <h3>{tour.name}</h3>
+            <p>Price: ₹{tour.price.toLocaleString('en-IN')}</p>
+            <p>Length: {tour.length}</p>
+            <p>Group Size: {tour.groupSize}</p>
+            <p>Type: {tour.type}</p>
+            <p>Place: {tour.place}</p>
+          </div>
+        ))
+      )}
     </div>
   );
 };

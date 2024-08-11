@@ -21,13 +21,6 @@ const groupSizeOptions = [
   { value: '21+', label: '21+' }
 ];
 
-const tourTypeOptions = [
-  { value: 'adventure', label: 'Adventure' },
-  { value: 'cultural', label: 'Cultural' },
-  { value: 'luxury', label: 'Luxury' },
-  { value: 'romantic', label: 'Romantic' }
-];
-
 const placeOptions = [
   { value: 'Gulmarg', label: 'Gulmarg' },
   { value: 'Srinagar', label: 'Srinagar' },
@@ -38,29 +31,38 @@ const placeOptions = [
   { value: 'Kokernag', label: 'Kokernag' }
 ];
 
-interface FilterComponentProps {
-  onFilterChange: (filters: any) => void;
-}
+const tourTypeOptions = [
+  { value: 'adventure', label: 'Adventure' },
+  { value: 'cultural', label: 'Cultural' },
+  { value: 'luxury', label: 'Luxury' },
+  { value: 'romantic', label: 'Romantic' }
+];
 
-const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => {
-  const [priceFilter, setPriceFilter] = useState<string | null>('slider');
-  const [priceRange, setPriceRange] = useState<[number, number]>([2000, 500000]);
-  const [selectedTourLength, setSelectedTourLength] = useState<string | null>(null);
-  const [selectedGroupSize, setSelectedGroupSize] = useState<string | null>(null);
-  const [selectedTourType, setSelectedTourType] = useState<string | null>(null);
-  const [searchPlace, setSearchPlace] = useState<string | null>(null);
+const FilterComponent = ({ onFilterChange }) => {
+  const [priceFilter, setPriceFilter] = useState('slider');
+  const [priceRange, setPriceRange] = useState([2000, 500000]);
+  const [selectedTourLength, setSelectedTourLength] = useState(null);
+  const [selectedGroupSize, setSelectedGroupSize] = useState(null);
+  const [selectedTourType, setSelectedTourType] = useState(null);
+  const [searchPlace, setSearchPlace] = useState(null);
 
-  const handlePriceFilterChange = (selectedOption: any) => {
+  const handlePriceFilterChange = (selectedOption) => {
     setPriceFilter(selectedOption?.value);
-    onFilterChange({ priceFilter: selectedOption?.value });
+    onFilterChange({
+      priceFilter: selectedOption?.value,
+      priceRange
+    });
   };
 
-  const handlePriceRangeChange = (min: number, max: number) => {
+  const handlePriceRangeChange = (min, max) => {
     setPriceRange([min, max]);
-    onFilterChange({ priceRange: [min, max] });
+    onFilterChange({
+      priceFilter,
+      priceRange: [min, max]
+    });
   };
 
-  const handleClearFilters = () => {
+  const clearFilters = () => {
     setPriceFilter('slider');
     setPriceRange([2000, 500000]);
     setSelectedTourLength(null);
@@ -72,25 +74,25 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => 
       priceRange: [2000, 500000],
       tourLength: null,
       groupSize: null,
-      tourType: null,
       searchPlace: null,
+      tourType: null,
     });
   };
 
   return (
     <div className="filter-component">
-      <h2>Filters</h2>
+      <div className='filters-heading'>Filters</div>
       <div className="filter-section">
         <label>Price Filter</label>
         <Select
           options={priceOptions}
           onChange={handlePriceFilterChange}
-          value={priceOptions.find(option => option.value === priceFilter)}
+          value={priceOptions.find((option) => option.value === priceFilter)}
           className="react-select-container"
           classNamePrefix="react-select"
         />
         {priceFilter === 'slider' ? (
-          <div className="slider-container">
+          <>
             <input
               type="range"
               min={2000}
@@ -98,8 +100,8 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => 
               value={priceRange[0]}
               onChange={(e) => handlePriceRangeChange(Number(e.target.value), priceRange[1])}
             />
-            <span className="price-display">INR {priceRange[0]}</span>
-          </div>
+            <div className="slider-price">₹{priceRange[0].toLocaleString('en-IN')}</div>
+          </>
         ) : (
           <div className="price-range">
             <input
@@ -120,11 +122,11 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => 
         <label>Tour Length</label>
         <Select
           options={tourLengthOptions}
-          onChange={(selectedOption: any) => {
-            setSelectedTourLength(selectedOption?.value);
+          onChange={(selectedOption) => {
+            setSelectedTourLength(selectedOption);
             onFilterChange({ tourLength: selectedOption?.value });
           }}
-          value={tourLengthOptions.find(option => option.value === selectedTourLength)}
+          value={selectedTourLength}
           className="react-select-container"
           classNamePrefix="react-select"
         />
@@ -134,11 +136,11 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => 
         <label>Group Size</label>
         <Select
           options={groupSizeOptions}
-          onChange={(selectedOption: any) => {
-            setSelectedGroupSize(selectedOption?.value);
+          onChange={(selectedOption) => {
+            setSelectedGroupSize(selectedOption);
             onFilterChange({ groupSize: selectedOption?.value });
           }}
-          value={groupSizeOptions.find(option => option.value === selectedGroupSize)}
+          value={selectedGroupSize}
           className="react-select-container"
           classNamePrefix="react-select"
         />
@@ -148,13 +150,14 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => 
         <label>Search By Place</label>
         <Select
           options={placeOptions}
-          onChange={(selectedOption: any) => {
-            setSearchPlace(selectedOption?.value);
+          onChange={(selectedOption) => {
+            setSearchPlace(selectedOption);
             onFilterChange({ searchPlace: selectedOption?.value });
           }}
-          value={placeOptions.find(option => option.value === searchPlace)}
+          value={searchPlace}
           className="react-select-container"
           classNamePrefix="react-select"
+          placeholder="Search by Place"
         />
       </div>
 
@@ -162,17 +165,17 @@ const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange }) => 
         <label>Tour Type</label>
         <Select
           options={tourTypeOptions}
-          onChange={(selectedOption: any) => {
-            setSelectedTourType(selectedOption?.value);
+          onChange={(selectedOption) => {
+            setSelectedTourType(selectedOption);
             onFilterChange({ tourType: selectedOption?.value });
           }}
-          value={tourTypeOptions.find(option => option.value === selectedTourType)}
+          value={selectedTourType}
           className="react-select-container"
           classNamePrefix="react-select"
         />
       </div>
 
-      <button onClick={handleClearFilters} className="clear-filters-button">
+      <button className="clear-filters-button" onClick={clearFilters}>
         Clear Filters
       </button>
     </div>
