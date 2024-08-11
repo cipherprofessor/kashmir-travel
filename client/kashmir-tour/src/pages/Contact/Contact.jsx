@@ -2,9 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 // client/src/pages/Contact/Contact.jsx
 import React from 'react';
-import ImgCardMap from '../../components/Cards/SelfImageCard/ImgCardMap/ImgCardMap';
-// import ChartDashboard from '../../components/Charts/ChartsDashboard/ChartsDashboard';
-import EChartsReactDashboard from '../../components/Charts/ByEchartsReact/EchartsReactDashboard/EChartsReactDashboard';
 
 
 function Contact() {
@@ -12,12 +9,7 @@ function Contact() {
 
 
     <>  
-    {/* <ImgCardMap /> */}
-
-    {/* < MyPackeryLayout /> */}
-
-{/* < ChartDashboard /> */}
-<EChartsReactDashboard />
+    
      </>
 
 

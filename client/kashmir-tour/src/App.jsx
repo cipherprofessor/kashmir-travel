@@ -6,7 +6,7 @@ import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/Contact/Contact';
-// import AllTours from './pages/AllTours/AllTours';
+import AllTours from './pages/AllTours/AllTours';
 import Signup from './components/Signup/Signup';
 import MainLayout from './components/Login/MainLayout';
 import SigninPage from './components/Login/Login';
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/tour" element={< AllTours />} /> */}
+        <Route path="/tour" element={< AllTours />} />
         <Route
           path="/signup"
           element={

@@ -1,14 +1,18 @@
 .all-tours-page {
     display: flex;
-    gap: 2rem;
+    gap: 16px;
+  }
   
-    .filter-component {
-      flex: 1;
-      max-width: 300px;
-    }
+  .tour-list {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
   
-    .tour-list {
-      flex: 3;
+    .tour-card {
+      padding: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
     }
   }
   

@@ -1,31 +1,50 @@
 import React, { useMemo, useState } from 'react';
-import FilterComponent from '../../components/Filters/FilterComponent';
-import TourList from '../../components/Filters/TourList/TourList';
 import './AllTours.scss';
+import FilterComponent from '../../components/Filters/ReactSelect/FilterComponent';
 
-// Mock tours data
-const tours = [
-  { id: 1, name: 'Tour 1', price: 10000, length: '1-3 days', groupSize: '1-5', type: 'adventure', place: 'Kashmir' },
-  { id: 2, name: 'Tour 2', price: 20000, length: '4-7 days', groupSize: '6-10', type: 'cultural', place: 'Ladakh' },
-  // Add more tour objects here
+// Example tour data
+const toursData = [
+  {
+    id: '1',
+    name: 'Adventure Tour',
+    price: 30000,
+    length: '4-7 days',
+    groupSize: '6-10',
+    type: 'Adventure',
+    place: 'Kashmir',
+  },
+  // Add more tour data here
 ];
 
 const AllTours = () => {
   const [filters, setFilters] = useState({});
 
   const handleFilterChange = (newFilters) => {
-    setFilters(prevFilters => ({ ...prevFilters, ...newFilters }));
+    setFilters((prevFilters) => ({ ...prevFilters, ...newFilters }));
   };
 
   const filteredTours = useMemo(() => {
-    return tours.filter(tour => {
-      if (filters.priceRange) {
-        if (tour.price < filters.priceRange[0] || tour.price > filters.priceRange[1]) return false;
+    return toursData.filter((tour) => {
+      const { priceFilter, priceRange, tourLength, groupSize, searchPlace, tourType } = filters;
+
+      // Apply filtering logic based on filters
+      if (priceFilter === 'slider' && priceRange) {
+        if (tour.price < priceRange[0] || tour.price > priceRange[1]) {
+          return false;
+        }
       }
-      if (filters.selectedTourLength && tour.length !== filters.selectedTourLength) return false;
-      if (filters.selectedGroupSize && tour.groupSize !== filters.selectedGroupSize) return false;
-      if (filters.selectedTourType && tour.type !== filters.selectedTourType) return false;
-      if (filters.searchPlace && !tour.place.toLowerCase().includes(filters.searchPlace.toLowerCase())) return false;
+      if (tourLength && tour.length !== tourLength) {
+        return false;
+      }
+      if (groupSize && tour.groupSize !== groupSize) {
+        return false;
+      }
+      if (searchPlace && !tour.place.toLowerCase().includes(searchPlace.toLowerCase())) {
+        return false;
+      }
+      if (tourType && tour.type !== tourType) {
+        return false;
+      }
       return true;
     });
   }, [filters]);
@@ -34,6 +53,24 @@ const AllTours = () => {
     <div className="all-tours-page">
       <FilterComponent onFilterChange={handleFilterChange} />
       <TourList tours={filteredTours} />
+    </div>
+  );
+};
+
+// TourList Component
+const TourList = ({ tours }) => {
+  return (
+    <div className="tour-list">
+      {tours.map((tour) => (
+        <div key={tour.id} className="tour-card">
+          <h3>{tour.name}</h3>
+          <p>Price: {tour.price}</p>
+          <p>Length: {tour.length}</p>
+          <p>Group Size: {tour.groupSize}</p>
+          <p>Type: {tour.type}</p>
+          <p>Place: {tour.place}</p>
+        </div>
+      ))}
     </div>
   );
 };
