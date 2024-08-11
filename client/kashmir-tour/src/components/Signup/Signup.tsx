@@ -1,9 +1,15 @@
-import { Box, Button, Checkbox, colors, Typography } from "@mui/material";
+import React from 'react';
+import { Box, Button, Checkbox, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import React from "react";
 import CustomInput from "../Login/CustomInput";
 
 const SignupPage = () => {
+  // Function to handle Google sign-up response
+  const responseGoogle = (response) => {
+    console.log(response);
+    // Send response.tokenId to your server for authentication
+  };
+
   return (
     <Grid
       xs={12}
@@ -13,13 +19,7 @@ const SignupPage = () => {
       xl={6}
       minHeight={550}
       sx={{
-        boxShadow: {
-          xs: "",
-          sm: "",
-          md: "15px 2px 5px -5px",
-          lg: "15px 2px 5px -5px",
-          xl: "15px 2px 5px -5px",
-        },
+        boxShadow: "15px 2px 5px -5px",
       }}
     >
       <Box
@@ -29,13 +29,7 @@ const SignupPage = () => {
           flexDirection: "column",
           alignItems: "center",
           height: "100%",
-          borderRadius: {
-            xs: "30px",
-            sm: "30px",
-            md: "30px 0 0 30px",
-            lg: "30px 0 0 30px",
-            xl: "30px 0 0 30px",
-          },
+          borderRadius: "30px 0 0 30px",
         }}
       >
         <Box width="70%">
@@ -51,7 +45,7 @@ const SignupPage = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                boxShadow: `0 0 20px ${colors.green[500]}`,
+                boxShadow: `0 0 20px green`,
               }}
             >
               <Typography variant="h6" fontWeight="bold" color="white">
@@ -60,13 +54,11 @@ const SignupPage = () => {
             </Box>
             {/* LOGO END */}
 
-            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4, marginBottom: 0 }} mt={7} mb={1}>
+            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }}>
               Travel Made Easy For You
             </Typography>
-            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', margin: 0 }} mt={7} mb={3}>
-            </Typography>
-            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }} mt={7} mb={3}>
-              Sign up 
+            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }}>
+              Sign up
             </Typography>
           </Box>
 
@@ -76,11 +68,6 @@ const SignupPage = () => {
             placeholder="Enter your E-mail ID..."
             isIconActive={false}
           />
-          {/* <CustomInput
-            label="Email"
-            placeholder="Enter your email..."
-            isIconActive={false}
-          /> */}
           <CustomInput
             label="Password"
             placeholder="Enter your password..."
@@ -101,21 +88,31 @@ const SignupPage = () => {
               <Typography>Remember me</Typography>
             </div>
             <a
-              href="#yoyo"
+              href="#"
               style={{
-                color: colors.green[500],
+                color: "green",
                 textDecoration: "none",
               }}
             >
               Forget password?
             </a>
           </Box>
+
           <Button
             variant="contained"
             fullWidth
-            sx={{ mt: 4, boxShadow: `0 0 20px ${colors.green[500]}` }}
+            sx={{ mt: 4, boxShadow: `0 0 20px green` }}
           >
             Sign Up
+          </Button>
+
+          <Button
+            variant="contained"
+            fullWidth
+            sx={{ mt: 4, boxShadow: `0 0 20px green` }}
+            onClick={() => window.location.href = 'http://localhost:5000/auth/google'}
+          >
+            Sign Up with Google
           </Button>
         </Box>
       </Box>

@@ -1,0 +1,163 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-08-11 17:05:12
+count workspace : c:\Users\lyken\Desktop\Travel Apps\kashmir-travel
+total files : 135
+total code lines : 9256
+total comment lines : 395
+total blank lines : 496
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .js|             87|             12|             17|   0.94|
+   |          .json|           5817|              0|             79|     63|
+   |            .md|              2|              0|              0|  0.022|
+   |           .svg|             71|              0|              0|   0.77|
+   |            .ts|            104|             33|             13|    1.1|
+   |           .tsx|           1077|            259|            138|     12|
+   |           .css|            129|             15|             20|    1.4|
+   |           .jsx|            981|             33|             80|     11|
+   |          .scss|            909|             33|            147|    9.8|
+   |               |             15|             10|              2|   0.16|
+   |          .html|             17|              0|              0|   0.18|
+   |           .cjs|             47|              0|              0|   0.51|
+   -------------------------------------------------------------------------
+client\kashmir-tour\.eslintrc.cjs, code is 47, comment is 0, blank is 0.
+client\kashmir-tour\.gitignore, code is 14, comment is 9, blank is 2.
+client\kashmir-tour\index.html, code is 17, comment is 0, blank is 0.
+client\kashmir-tour\package-lock.json, code is 4730, comment is 0, blank is 79.
+client\kashmir-tour\package.json, code is 49, comment is 0, blank is 0.
+client\kashmir-tour\postcss.config.js, code is 4, comment is 2, blank is 0.
+client\kashmir-tour\public\travel.jpg, it is a binary file.
+client\kashmir-tour\public\vite.svg, code is 1, comment is 0, blank is 0.
+client\kashmir-tour\README.md, code is 1, comment is 0, blank is 0.
+client\kashmir-tour\src\App.css, code is 0, comment is 0, blank is 0.
+client\kashmir-tour\src\App.jsx, code is 77, comment is 0, blank is 2.
+client\kashmir-tour\src\assets\bg.png, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\gulmarg\gulmarg.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\gulmarg\gulmarg1.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\gulmarg\gulmarg2.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\pahalgam\pahalgam1.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\pahalgam\pahalgam2.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\pahalgam\pahalgam3.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\sonmarg\sonmarg.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\sonmarg\sonmarg1.png, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\sonmarg\sonmarg2.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\srinagar\dallake.png, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\srinagar\ghantaghar.jpg, it is a binary file.
+client\kashmir-tour\src\assets\cardimages\srinagar\tulip.jpg, it is a binary file.
+client\kashmir-tour\src\assets\icons\login1.png, it is a binary file.
+client\kashmir-tour\src\assets\icons\next2.png, it is a binary file.
+client\kashmir-tour\src\assets\icons\previous1.png, it is a binary file.
+client\kashmir-tour\src\assets\icons\signup1.png, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (1).jpg, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (2).jpg, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (3).jpg, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (4).jpg, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (5).jpg, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (6).jpg, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (7).jpg, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (8).jpg, it is a binary file.
+client\kashmir-tour\src\assets\landscape\image (9).jpg, it is a binary file.
+client\kashmir-tour\src\assets\logos\calendar.png, it is a binary file.
+client\kashmir-tour\src\assets\logos\group.png, it is a binary file.
+client\kashmir-tour\src\assets\logos\travel.png, it is a binary file.
+client\kashmir-tour\src\assets\persons\arsalan.jpg, it is a binary file.
+client\kashmir-tour\src\assets\persons\persons (1).webp, it is a binary file.
+client\kashmir-tour\src\assets\persons\persons (2).webp, it is a binary file.
+client\kashmir-tour\src\assets\persons\persons (3).webp, it is a binary file.
+client\kashmir-tour\src\assets\persons\persons (4).webp, it is a binary file.
+client\kashmir-tour\src\assets\persons\persons (5).webp, it is a binary file.
+client\kashmir-tour\src\assets\scenery\kashmir1.jpg, it is a binary file.
+client\kashmir-tour\src\assets\scenery\kashmir2.jpg, it is a binary file.
+client\kashmir-tour\src\assets\scenery\kashmir4.jpg, it is a binary file.
+client\kashmir-tour\src\assets\scenery\kashmir5.jpg, it is a binary file.
+client\kashmir-tour\src\assets\scenery\kashmir6.jpg, it is a binary file.
+client\kashmir-tour\src\assets\scenery\kashmir7.jpg, it is a binary file.
+client\kashmir-tour\src\assets\socialmediaicons\Elemento.png, it is a binary file.
+client\kashmir-tour\src\assets\socialmediaicons\glassinsta.png, it is a binary file.
+client\kashmir-tour\src\assets\socialmediaicons\glasslinkedin.png, it is a binary file.
+client\kashmir-tour\src\assets\socialmediaicons\instagram.png, it is a binary file.
+client\kashmir-tour\src\assets\socialmediaicons\linkedin.png, it is a binary file.
+client\kashmir-tour\src\assets\socialmediaicons\Linkedin.svg, code is 70, comment is 0, blank is 0.
+client\kashmir-tour\src\assets\watch.png, it is a binary file.
+client\kashmir-tour\src\components\Banner\Banner.css, code is 15, comment is 0, blank is 1.
+client\kashmir-tour\src\components\Banner\Banner.jsx, code is 14, comment is 2, blank is 2.
+client\kashmir-tour\src\components\Cards\Collage\Collage.scss, code is 31, comment is 5, blank is 4.
+client\kashmir-tour\src\components\Cards\Collage\Collage.tsx, code is 23, comment is 0, blank is 3.
+client\kashmir-tour\src\components\Cards\ImageMediaCard\ImageMediaCard.scss, code is 5, comment is 6, blank is 2.
+client\kashmir-tour\src\components\Cards\ImageMediaCard\ImageMediaCard.tsx, code is 33, comment is 1, blank is 2.
+client\kashmir-tour\src\components\Cards\ImageMediaCardComponent\CardComponent.scss, code is 22, comment is 1, blank is 5.
+client\kashmir-tour\src\components\Cards\ImageMediaCardComponent\CardComponent.tsx, code is 25, comment is 1, blank is 3.
+client\kashmir-tour\src\components\Cards\RecipeReviewCard\RecipeReviewCard.scss, code is 17, comment is 3, blank is 4.
+client\kashmir-tour\src\components\Cards\RecipeReviewCard\RecipeReviewCard.tsx, code is 113, comment is 0, blank is 6.
+client\kashmir-tour\src\components\Cards\SelfImageCard\ImgCard\ImgCard.scss, code is 52, comment is 4, blank is 8.
+client\kashmir-tour\src\components\Cards\SelfImageCard\ImgCard\ImgCard.tsx, code is 41, comment is 0, blank is 3.
+client\kashmir-tour\src\components\Cards\SelfImageCard\ImgCardMap\ImgCardMap.scss, code is 7, comment is 0, blank is 0.
+client\kashmir-tour\src\components\Cards\SelfImageCard\ImgCardMap\ImgCardMap.tsx, code is 50, comment is 0, blank is 3.
+client\kashmir-tour\src\components\Filters\MUI\TourList\FilterComponent.jsx, code is 140, comment is 0, blank is 14.
+client\kashmir-tour\src\components\Filters\MUI\TourList\FilterComponent.scss, code is 17, comment is 0, blank is 3.
+client\kashmir-tour\src\components\Filters\MUI\TourList\TourList.jsx, code is 23, comment is 0, blank is 2.
+client\kashmir-tour\src\components\Filters\MUI\TourList\TourList.scss, code is 15, comment is 0, blank is 2.
+client\kashmir-tour\src\components\Filters\ReactSelect\FilterComponent.scss, code is 29, comment is 0, blank is 6.
+client\kashmir-tour\src\components\Filters\ReactSelect\FilterComponent.tsx, code is 128, comment is 0, blank is 14.
+client\kashmir-tour\src\components\Footer\Footer.css, code is 5, comment is 0, blank is 0.
+client\kashmir-tour\src\components\Footer\Footer.jsx, code is 40, comment is 1, blank is 1.
+client\kashmir-tour\src\components\Header\DropDownHeader\DropDownHeader.jsx, code is 19, comment is 0, blank is 2.
+client\kashmir-tour\src\components\Header\DropDownHeader\DropDownHeader.scss, code is 31, comment is 0, blank is 4.
+client\kashmir-tour\src\components\Header\Header.jsx, code is 120, comment is 0, blank is 10.
+client\kashmir-tour\src\components\Header\Header.scss, code is 128, comment is 11, blank is 23.
+client\kashmir-tour\src\components\ImageCard\ImageCard.jsx, code is 58, comment is 0, blank is 2.
+client\kashmir-tour\src\components\ImageCard\ImageCard.scss, code is 80, comment is 0, blank is 11.
+client\kashmir-tour\src\components\ImageSlider\ImageSlider.jsx, code is 81, comment is 4, blank is 4.
+client\kashmir-tour\src\components\ImageSlider\ImageSlider.scss, code is 76, comment is 0, blank is 11.
+client\kashmir-tour\src\components\Login\CustomInput.tsx, code is 54, comment is 0, blank is 2.
+client\kashmir-tour\src\components\Login\CustomInput2.tsx, code is 86, comment is 0, blank is 21.
+client\kashmir-tour\src\components\Login\Login.jsx, code is 118, comment is 10, blank is 8.
+client\kashmir-tour\src\components\Login\Login.scss, code is 8, comment is 0, blank is 1.
+client\kashmir-tour\src\components\Login\MainLayout.tsx, code is 27, comment is 1, blank is 2.
+client\kashmir-tour\src\components\Login\QuestionPage.tsx, code is 118, comment is 14, blank is 12.
+client\kashmir-tour\src\components\Login\TitleBox.tsx, code is 42, comment is 0, blank is 2.
+client\kashmir-tour\src\components\Logo\Logo.tsx, code is 12, comment is 14, blank is 2.
+client\kashmir-tour\src\components\MultiMapping\Collage\CollageMapping.tsx, code is 16, comment is 0, blank is 5.
+client\kashmir-tour\src\components\Nav\Nav.tsx, code is 45, comment is 33, blank is 9.
+client\kashmir-tour\src\components\Signup\Signup.tsx, code is 117, comment is 4, blank is 6.
+client\kashmir-tour\src\components\SlidingGallery\SlidingGallery.scss, code is 181, comment is 0, blank is 29.
+client\kashmir-tour\src\components\SlidingGallery\SlidingGallery.tsx, code is 68, comment is 6, blank is 4.
+client\kashmir-tour\src\components\ThemeToggle\ThemeToggle.tsx, code is 0, comment is 41, blank is 6.
+client\kashmir-tour\src\components\ThemeToggle\ThemeToggleIcon.tsx, code is 0, comment is 25, blank is 6.
+client\kashmir-tour\src\components\TourPackageCard\TourPackageCard.jsx, code is 73, comment is 3, blank is 5.
+client\kashmir-tour\src\components\TourPackageCard\TourPackageCard.scss, code is 123, comment is 3, blank is 20.
+client\kashmir-tour\src\data\animationConfig.ts, code is 50, comment is 1, blank is 6.
+client\kashmir-tour\src\data\blogList.server.ts, code is 37, comment is 2, blank is 1.
+client\kashmir-tour\src\global.css, code is 0, comment is 6, blank is 0.
+client\kashmir-tour\src\index.css, code is 14, comment is 8, blank is 5.
+client\kashmir-tour\src\main.jsx, code is 10, comment is 0, blank is 1.
+client\kashmir-tour\src\pages\AboutUs\AboutUs.jsx, code is 15, comment is 3, blank is 2.
+client\kashmir-tour\src\pages\AllTours\AllTours.jsx, code is 66, comment is 4, blank is 8.
+client\kashmir-tour\src\pages\AllTours\AllTours.scss, code is 15, comment is 0, blank is 2.
+client\kashmir-tour\src\pages\AllTours\AllTours1.jsx, code is 33, comment is 2, blank is 6.
+client\kashmir-tour\src\pages\AllTours\AllTours1.scss, code is 11, comment is 0, blank is 2.
+client\kashmir-tour\src\pages\AllTours\types\AllTours.ts, code is 17, comment is 3, blank is 2.
+client\kashmir-tour\src\pages\Contact\Contact.jsx, code is 8, comment is 3, blank is 8.
+client\kashmir-tour\src\pages\Home\Home.jsx, code is 86, comment is 1, blank is 3.
+client\kashmir-tour\src\pages\Home\Home.scss, code is 61, comment is 0, blank is 10.
+client\kashmir-tour\src\styles\tailwind.css, code is 95, comment is 1, blank is 14.
+client\kashmir-tour\src\styles\theme.tsx, code is 61, comment is 0, blank is 2.
+client\kashmir-tour\src\utils\misc.tsx, code is 18, comment is 1, blank is 2.
+client\kashmir-tour\src\utils\theme-provider.tsx, code is 0, comment is 118, blank is 23.
+client\kashmir-tour\src\utils\theme.server.ts, code is 0, comment is 27, blank is 4.
+client\kashmir-tour\tailwind.config.js, code is 7, comment is 0, blank is 0.
+client\kashmir-tour\vite.config.js, code is 5, comment is 2, blank is 1.
+README.md, code is 1, comment is 0, blank is 0.
+server\.env, code is 1, comment is 1, blank is 0.
+server\.gitignore, it is a binary file.
+server\models\Destination.js, code is 8, comment is 1, blank is 2.
+server\package-lock.json, code is 1020, comment is 0, blank is 0.
+server\package.json, code is 18, comment is 0, blank is 0.
+server\routes\destinations.js, code is 44, comment is 5, blank is 6.
+server\server.js, code is 19, comment is 2, blank is 8.
+===============================================================================

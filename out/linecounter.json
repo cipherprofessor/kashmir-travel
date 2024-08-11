@@ -1,0 +1,938 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "c:\\Users\\lyken\\Desktop\\Travel Apps\\kashmir-travel",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2024-08-11 17:05:12",
+            "filesum": 135,
+            "codesum": 9256,
+            "commentsum": 395,
+            "blanksum": 496,
+            "statistics": {
+                ".js": {
+                    "code": 87,
+                    "comment": 12,
+                    "blank": 17
+                },
+                ".json": {
+                    "code": 5817,
+                    "comment": 0,
+                    "blank": 79
+                },
+                ".md": {
+                    "code": 2,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".svg": {
+                    "code": 71,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".ts": {
+                    "code": 104,
+                    "comment": 33,
+                    "blank": 13
+                },
+                ".tsx": {
+                    "code": 1077,
+                    "comment": 259,
+                    "blank": 138
+                },
+                ".css": {
+                    "code": 129,
+                    "comment": 15,
+                    "blank": 20
+                },
+                ".jsx": {
+                    "code": 981,
+                    "comment": 33,
+                    "blank": 80
+                },
+                ".scss": {
+                    "code": 909,
+                    "comment": 33,
+                    "blank": 147
+                },
+                "": {
+                    "code": 15,
+                    "comment": 10,
+                    "blank": 2
+                },
+                ".html": {
+                    "code": 17,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".cjs": {
+                    "code": 47,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 47,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\.eslintrc.cjs"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 9,
+                    "filename": "client\\kashmir-tour\\.gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\index.html"
+                },
+                {
+                    "blank": 79,
+                    "code": 4730,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 49,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 2,
+                    "filename": "client\\kashmir-tour\\postcss.config.js"
+                },
+                {
+                    "filename": "client\\kashmir-tour\\public\\travel.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\public\\vite.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\README.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\App.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 77,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\App.jsx"
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\bg.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\gulmarg\\gulmarg.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\gulmarg\\gulmarg1.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\gulmarg\\gulmarg2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\pahalgam\\pahalgam1.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\pahalgam\\pahalgam2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\pahalgam\\pahalgam3.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\sonmarg\\sonmarg.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\sonmarg\\sonmarg1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\sonmarg\\sonmarg2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\srinagar\\dallake.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\srinagar\\ghantaghar.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\cardimages\\srinagar\\tulip.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\icons\\login1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\icons\\next2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\icons\\previous1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\icons\\signup1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (1).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (2).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (3).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (4).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (5).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (6).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (7).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (8).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\landscape\\image (9).jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\logos\\calendar.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\logos\\group.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\logos\\travel.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\persons\\arsalan.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\persons\\persons (1).webp",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\persons\\persons (2).webp",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\persons\\persons (3).webp",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\persons\\persons (4).webp",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\persons\\persons (5).webp",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\scenery\\kashmir1.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\scenery\\kashmir2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\scenery\\kashmir4.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\scenery\\kashmir5.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\scenery\\kashmir6.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\scenery\\kashmir7.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\socialmediaicons\\Elemento.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\socialmediaicons\\glassinsta.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\socialmediaicons\\glasslinkedin.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\socialmediaicons\\instagram.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\socialmediaicons\\linkedin.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 70,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\assets\\socialmediaicons\\Linkedin.svg"
+                },
+                {
+                    "filename": "client\\kashmir-tour\\src\\assets\\watch.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Banner\\Banner.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 2,
+                    "filename": "client\\kashmir-tour\\src\\components\\Banner\\Banner.jsx"
+                },
+                {
+                    "blank": 4,
+                    "code": 31,
+                    "comment": 5,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\Collage\\Collage.scss"
+                },
+                {
+                    "blank": 3,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\Collage\\Collage.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 6,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\ImageMediaCard\\ImageMediaCard.scss"
+                },
+                {
+                    "blank": 2,
+                    "code": 33,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\ImageMediaCard\\ImageMediaCard.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 22,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\ImageMediaCardComponent\\CardComponent.scss"
+                },
+                {
+                    "blank": 3,
+                    "code": 25,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\ImageMediaCardComponent\\CardComponent.tsx"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 3,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\RecipeReviewCard\\RecipeReviewCard.scss"
+                },
+                {
+                    "blank": 6,
+                    "code": 113,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\RecipeReviewCard\\RecipeReviewCard.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 52,
+                    "comment": 4,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\SelfImageCard\\ImgCard\\ImgCard.scss"
+                },
+                {
+                    "blank": 3,
+                    "code": 41,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\SelfImageCard\\ImgCard\\ImgCard.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\SelfImageCard\\ImgCardMap\\ImgCardMap.scss"
+                },
+                {
+                    "blank": 3,
+                    "code": 50,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Cards\\SelfImageCard\\ImgCardMap\\ImgCardMap.tsx"
+                },
+                {
+                    "blank": 14,
+                    "code": 140,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Filters\\MUI\\TourList\\FilterComponent.jsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Filters\\MUI\\TourList\\FilterComponent.scss"
+                },
+                {
+                    "blank": 2,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Filters\\MUI\\TourList\\TourList.jsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Filters\\MUI\\TourList\\TourList.scss"
+                },
+                {
+                    "blank": 6,
+                    "code": 29,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Filters\\ReactSelect\\FilterComponent.scss"
+                },
+                {
+                    "blank": 14,
+                    "code": 128,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Filters\\ReactSelect\\FilterComponent.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Footer\\Footer.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 40,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\components\\Footer\\Footer.jsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Header\\DropDownHeader\\DropDownHeader.jsx"
+                },
+                {
+                    "blank": 4,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Header\\DropDownHeader\\DropDownHeader.scss"
+                },
+                {
+                    "blank": 10,
+                    "code": 120,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Header\\Header.jsx"
+                },
+                {
+                    "blank": 23,
+                    "code": 128,
+                    "comment": 11,
+                    "filename": "client\\kashmir-tour\\src\\components\\Header\\Header.scss"
+                },
+                {
+                    "blank": 2,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\ImageCard\\ImageCard.jsx"
+                },
+                {
+                    "blank": 11,
+                    "code": 80,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\ImageCard\\ImageCard.scss"
+                },
+                {
+                    "blank": 4,
+                    "code": 81,
+                    "comment": 4,
+                    "filename": "client\\kashmir-tour\\src\\components\\ImageSlider\\ImageSlider.jsx"
+                },
+                {
+                    "blank": 11,
+                    "code": 76,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\ImageSlider\\ImageSlider.scss"
+                },
+                {
+                    "blank": 2,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Login\\CustomInput.tsx"
+                },
+                {
+                    "blank": 21,
+                    "code": 86,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Login\\CustomInput2.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 118,
+                    "comment": 10,
+                    "filename": "client\\kashmir-tour\\src\\components\\Login\\Login.jsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Login\\Login.scss"
+                },
+                {
+                    "blank": 2,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\components\\Login\\MainLayout.tsx"
+                },
+                {
+                    "blank": 12,
+                    "code": 118,
+                    "comment": 14,
+                    "filename": "client\\kashmir-tour\\src\\components\\Login\\QuestionPage.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 42,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\Login\\TitleBox.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 14,
+                    "filename": "client\\kashmir-tour\\src\\components\\Logo\\Logo.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\MultiMapping\\Collage\\CollageMapping.tsx"
+                },
+                {
+                    "blank": 9,
+                    "code": 45,
+                    "comment": 33,
+                    "filename": "client\\kashmir-tour\\src\\components\\Nav\\Nav.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 117,
+                    "comment": 4,
+                    "filename": "client\\kashmir-tour\\src\\components\\Signup\\Signup.tsx"
+                },
+                {
+                    "blank": 29,
+                    "code": 181,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\components\\SlidingGallery\\SlidingGallery.scss"
+                },
+                {
+                    "blank": 4,
+                    "code": 68,
+                    "comment": 6,
+                    "filename": "client\\kashmir-tour\\src\\components\\SlidingGallery\\SlidingGallery.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 0,
+                    "comment": 41,
+                    "filename": "client\\kashmir-tour\\src\\components\\ThemeToggle\\ThemeToggle.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 0,
+                    "comment": 25,
+                    "filename": "client\\kashmir-tour\\src\\components\\ThemeToggle\\ThemeToggleIcon.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 73,
+                    "comment": 3,
+                    "filename": "client\\kashmir-tour\\src\\components\\TourPackageCard\\TourPackageCard.jsx"
+                },
+                {
+                    "blank": 20,
+                    "code": 123,
+                    "comment": 3,
+                    "filename": "client\\kashmir-tour\\src\\components\\TourPackageCard\\TourPackageCard.scss"
+                },
+                {
+                    "blank": 6,
+                    "code": 50,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\data\\animationConfig.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 37,
+                    "comment": 2,
+                    "filename": "client\\kashmir-tour\\src\\data\\blogList.server.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 6,
+                    "filename": "client\\kashmir-tour\\src\\global.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 14,
+                    "comment": 8,
+                    "filename": "client\\kashmir-tour\\src\\index.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\main.jsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 3,
+                    "filename": "client\\kashmir-tour\\src\\pages\\AboutUs\\AboutUs.jsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 66,
+                    "comment": 4,
+                    "filename": "client\\kashmir-tour\\src\\pages\\AllTours\\AllTours.jsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\pages\\AllTours\\AllTours.scss"
+                },
+                {
+                    "blank": 6,
+                    "code": 33,
+                    "comment": 2,
+                    "filename": "client\\kashmir-tour\\src\\pages\\AllTours\\AllTours1.jsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\pages\\AllTours\\AllTours1.scss"
+                },
+                {
+                    "blank": 2,
+                    "code": 17,
+                    "comment": 3,
+                    "filename": "client\\kashmir-tour\\src\\pages\\AllTours\\types\\AllTours.ts"
+                },
+                {
+                    "blank": 8,
+                    "code": 8,
+                    "comment": 3,
+                    "filename": "client\\kashmir-tour\\src\\pages\\Contact\\Contact.jsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 86,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\pages\\Home\\Home.jsx"
+                },
+                {
+                    "blank": 10,
+                    "code": 61,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\pages\\Home\\Home.scss"
+                },
+                {
+                    "blank": 14,
+                    "code": 95,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\styles\\tailwind.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 61,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\src\\styles\\theme.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": "client\\kashmir-tour\\src\\utils\\misc.tsx"
+                },
+                {
+                    "blank": 23,
+                    "code": 0,
+                    "comment": 118,
+                    "filename": "client\\kashmir-tour\\src\\utils\\theme-provider.tsx"
+                },
+                {
+                    "blank": 4,
+                    "code": 0,
+                    "comment": 27,
+                    "filename": "client\\kashmir-tour\\src\\utils\\theme.server.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "client\\kashmir-tour\\tailwind.config.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 2,
+                    "filename": "client\\kashmir-tour\\vite.config.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "server\\.env"
+                },
+                {
+                    "filename": "server\\.gitignore",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 1,
+                    "filename": "server\\models\\Destination.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1020,
+                    "comment": 0,
+                    "filename": "server\\package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "server\\package.json"
+                },
+                {
+                    "blank": 6,
+                    "code": 44,
+                    "comment": 5,
+                    "filename": "server\\routes\\destinations.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 19,
+                    "comment": 2,
+                    "filename": "server\\server.js"
+                }
+            ]
+        }
+    ]
+}

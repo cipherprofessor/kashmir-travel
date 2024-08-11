@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.6",
+    "@react-oauth/google": "^0.12.1",
     "@remix-run/node": "^2.10.3",
     "@remix-run/react": "^2.10.3",
     "draggabilly": "^3.0.0",
@@ -20,6 +21,7 @@
     "echarts-for-react": "^3.0.2",
     "echarts-liquidfill": "^3.1.0",
     "echarts-wordcloud": "^2.1.0",
+    "formik": "^2.4.6",
     "gridstack": "^10.3.1",
     "lodash.debounce": "^4.0.8",
     "lucide-react": "^0.427.0",
@@ -32,7 +34,8 @@
     "react-select": "^5.8.0",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.1.9"
+    "swiper": "^11.1.9",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/draggabilly": "^2.1.6",

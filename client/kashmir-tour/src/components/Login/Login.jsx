@@ -5,12 +5,10 @@ import CustomInput from "./CustomInput";
 import { BrowserRouter, Route } from 'react-router-dom';
 
 const SigninPage = () => {
-  // const navigate = useNavigate();
-  // console.log(navigate);
-  
-  // const gotoQuestion = useCallback(() => {
-  //   navigate("./QuestionPage")
-  // }, [navigate]);
+  const responseGoogle = (response) => {
+    console.log(response);
+    // Send response.tokenId to your server for authentication
+  };
 
   return (
     <Grid
@@ -21,13 +19,7 @@ const SigninPage = () => {
       xl={6}
       minHeight={550}
       sx={{
-        boxShadow: {
-          xs: "",
-          sm: "",
-          md: "15px 2px 5px -5px",
-          lg: "15px 2px 5px -5px",
-          xl: "15px 2px 5px -5px",
-        },
+        boxShadow: "15px 2px 5px -5px",
       }}
     >
       <Box
@@ -37,13 +29,7 @@ const SigninPage = () => {
           flexDirection: "column",
           alignItems: "center",
           height: "100%",
-          borderRadius: {
-            xs: "30px",
-            sm: "30px",
-            md: "30px 0 0 30px",
-            lg: "30px 0 0 30px",
-            xl: "30px 0 0 30px",
-          },
+          borderRadius: "30px 0 0 30px",
         }}
       >
         <Box width="70%">
@@ -59,7 +45,7 @@ const SigninPage = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                boxShadow: `0 0 20px ${colors.green[500]}`,
+                boxShadow: `0 0 20px green`,
               }}
             >
               <Typography variant="h6" fontWeight="bold" color="white">
@@ -68,13 +54,11 @@ const SigninPage = () => {
             </Box>
             {/* LOGO END */}
 
-            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4, marginBottom: 0 }} mt={7} mb={1}>
+            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }}>
               Simplifies connecting, augmenting your travel
             </Typography>
-            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', margin: 0 }} mt={7} mb={3}>
-            </Typography>
-            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }} mt={7} mb={3}>
-              Sign in 
+            <Typography color="white" fontWeight="bold" sx={{ textAlign: 'center', marginTop: 4 }}>
+              Sign in
             </Typography>
           </Box>
 
@@ -89,11 +73,6 @@ const SigninPage = () => {
             placeholder="Enter your password..."
             isIconActive={true}
           />
-          {/* <CustomInput
-            label="MFA Code"
-            placeholder="Enter your code..."
-            isIconActive={true}
-          /> */}
           {/* INPUT END */}
 
           <Box
@@ -109,9 +88,9 @@ const SigninPage = () => {
               <Typography>Remember me</Typography>
             </div>
             <a
-              href="#yoyo"
+              href="#"
               style={{
-                color: colors.green[500],
+                color: "green",
                 textDecoration: "none",
               }}
             >
@@ -125,6 +104,16 @@ const SigninPage = () => {
             sx={{ mt: 4, boxShadow: `0 0 20px ${colors.green[500]}` }}
           >
             Login
+          </Button>
+          <Button
+            // onClick={gotoQuestion}
+            variant="contained"
+            fullWidth
+            sx={{ mt: 4, boxShadow: `0 0 20px ${colors.green[500]}` }}
+            onClick={() => window.location.href = 'http://localhost:5000/auth/google'}
+            
+          >
+            Login with Google
           </Button>
         </Box>
       </Box>
