@@ -44,8 +44,8 @@ function Header() {
           <NavLink to="/about-us" className="nav-link">
             About Us
           </NavLink>
-          <NavLink to="/contact" className="nav-link">
-            Contact
+          <NavLink to="/alltours" className="nav-link">
+            All Tours
           </NavLink>
           <div
             className="nav-link dropdown"

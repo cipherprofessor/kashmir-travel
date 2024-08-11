@@ -26,7 +26,7 @@ const toursData = [
     id: '3',
     name: 'Cultural',
     price: 200000,
-    length: '11 days',
+    length: '1-3 days',
     groupSize: '21+',
     type: 'Cultural',
     place: 'Pahalgam',
