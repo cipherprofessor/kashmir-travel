@@ -1,7 +1,4 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable react/jsx-no-comment-textnodes */
-// src/components/Header.jsx
+
 
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
