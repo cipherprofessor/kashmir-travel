@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { handleError, handleSuccess } from '../../utils/LoginSignupHandle';
+import './Signup.scss';
 
 const Signup = () => {
   const [signupInfo, setSignupInfo] = useState({
@@ -14,7 +15,6 @@ const Signup = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setSignupInfo((prevInfo) => ({
       ...prevInfo,
       [name]: value,
@@ -49,53 +49,57 @@ const Signup = () => {
       } else if (!success) {
         handleError(message);
       }
-      console.log(result);
     } catch (err) {
       handleError(err);
     }
   };
 
   return (
-    <div className='container'>
-      <h1>Signup</h1>
-      <form onSubmit={handleSignup}>
-        <div>
-          <label htmlFor='name'>Name</label>
-          <input
-            onChange={handleChange}
-            type='text'
-            name='name'
-            autoFocus
-            placeholder='Enter your name...'
-            value={signupInfo.name}
-          />
-        </div>
-        <div>
-          <label htmlFor='email'>Email</label>
-          <input
-            onChange={handleChange}
-            type='email'
-            name='email'
-            placeholder='Enter your email...'
-            value={signupInfo.email}
-          />
-        </div>
-        <div>
-          <label htmlFor='password'>Password</label>
-          <input
-            onChange={handleChange}
-            type='password'
-            name='password'
-            placeholder='Enter your password...'
-            value={signupInfo.password}
-          />
-        </div>
-        <button type='submit'>Signup</button>
-        <span>
-          Already have an account? <Link to='/login'>Login</Link>
-        </span>
-      </form>
-      <ToastContainer />
+    <div className="signup-container">
+      <div className="signup-box">
+        <h1 className="signup-title">Signup</h1>
+        <form className="signup-form" onSubmit={handleSignup}>
+          <div className="signup-field">
+            <label className="signup-label" htmlFor="name">Name</label>
+            <input
+              className="signup-input"
+              onChange={handleChange}
+              type="text"
+              name="name"
+              autoFocus
+              placeholder="Enter your name..."
+              value={signupInfo.name}
+            />
+          </div>
+          <div className="signup-field">
+            <label className="signup-label" htmlFor="email">Email</label>
+            <input
+              className="signup-input"
+              onChange={handleChange}
+              type="email"
+              name="email"
+              placeholder="Enter your email..."
+              value={signupInfo.email}
+            />
+          </div>
+          <div className="signup-field">
+            <label className="signup-label" htmlFor="password">Password</label>
+            <input
+              className="signup-input"
+              onChange={handleChange}
+              type="password"
+              name="password"
+              placeholder="Enter your password..."
+              value={signupInfo.password}
+            />
+          </div>
+          <button className="signup-button" type="submit">Signup</button>
+          <span className="signup-login">
+            Already have an account? <Link to="/login" className="signup-login-link">Login</Link>
+          </span>
+        </form>
+        <ToastContainer />
+      </div>
     </div>
   );
 };
