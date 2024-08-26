@@ -13,6 +13,8 @@ import AllTours from './pages/AllTours/AllTours';
 // import TitleBox from './components/Login/TitleBox';
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
+import MeteorShower from './components/MeteorShower/MeteorShower';
+
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/MeteorShower" element={<MeteorShower />} />
+
         <Route path="/alltours" element={< AllTours />} />
         <Route path="/login" element={<Login /> } />
         <Route path= "/signup" element={<Signup />} />

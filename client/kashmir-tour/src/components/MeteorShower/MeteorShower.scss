@@ -1,0 +1,37 @@
+.framer-page-container {
+    background: transparent; // Set background as transparent
+    min-height: 100vh; // Ensures the entire viewport is covered
+    overflow: hidden; // Prevents scrolling issues due to overflowing content
+    position: relative;
+  
+    .meteors-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  
+    .meteor {
+      position: absolute;
+      top: -50px; // Start above the screen
+      width: 2px;
+      height: 80px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1), transparent);
+      transform: rotate(45deg);
+      opacity: 0.8;
+      filter: blur(1px);
+      animation: meteor-shower linear infinite;
+    }
+  
+    @keyframes meteor-shower {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(150vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  }
+  

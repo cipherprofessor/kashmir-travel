@@ -27,7 +27,7 @@ const Login = () => {
       return handleError('Email and password are required');
     }
     try {
-      const url = `https://deploy-mern-app-1-api.vercel.app/auth/login`;
+      const url = `http://localhost:8080/auth/login`;
       const response = await fetch(url, {
         method: 'POST',
         headers: {
@@ -42,7 +42,7 @@ const Login = () => {
         localStorage.setItem('token', jwtToken);
         localStorage.setItem('loggedInUser', name);
         setTimeout(() => {
-          navigate('/home');
+          navigate('/');
         }, 1000);
       } else if (error) {
         const details = error?.details[0]?.message;

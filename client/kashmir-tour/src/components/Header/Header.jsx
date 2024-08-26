@@ -44,6 +44,9 @@ function Header() {
           <NavLink to="/about-us" className="nav-link">
             About Us
           </NavLink>
+          <NavLink to="/MeteorShower" className="nav-link">
+            MeteorShower
+          </NavLink>
           <NavLink to="/alltours" className="nav-link">
             All Tours
           </NavLink>
